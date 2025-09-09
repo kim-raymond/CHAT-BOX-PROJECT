@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pre Call Components</title>
+
+    <!-- poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Official Script -->
+    <script src="./src/script.js"></script>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Tailwind CSS -->
+    <script src="./src/tailwindCustom.js"></script>
+    <!-- STYLE -->
+    <link rel="stylesheet" href="utllities.css">
+  </head>
+  
+
+
+  <body class="flex font-sans bg-neutral-200">
+
+  <!-- FAN SECTION START HERE!-->
+  <div class="absolute items-end bottom-[0.5rem] left-[3rem] z-[5] w-[23.4375rem] h-[38.9375rem] rounded-[0.5rem] shadow-3xl">
+    <!-- convo bubble overflow START -->
+    <div class="relative w-[23.4375rem] h-[35.4375rem] backdrop-blur-md rounded-t-[0.25rem] ">
+
+    <!-- header section start -->
+    <div class="absolute z-[10] flex items-center justify-between w-full h-[3.5rem] p-[0.375rem] gap-[0.375] backdrop-blur-xs rounded-t-[0.25rem] bg-white/30">
+        <div class="flex w-[10.1875rem] h-[2.5rem] gap-[0.25rem]">
+        <!-- avatar -->
+        <div class="w-[2.5rem] h-[2.25rem] bg-[url(./img/artistAvatar.png)] bg-cover bg-center mask-mango"></div>
+        <!-- User Name and status wrapper -->
+        <div class=" gap-y-[0.125rem] ">
+        <!-- user name -->
+        <div class="flex items-center gap-[0.125rem]">    
+        <h2 class="text-[0.875rem] font-semibold">Jenny Honey~</h2>
+        <svg width="12" height="4" viewBox="0 0 12 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.99996 2.66671C6.36815 2.66671 6.66663 2.36823 6.66663 2.00004C6.66663 1.63185 6.36815 1.33337 5.99996 1.33337C5.63177 1.33337 5.33329 1.63185 5.33329 2.00004C5.33329 2.36823 5.63177 2.66671 5.99996 2.66671Z" stroke="#667085" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M10.6666 2.66671C11.0348 2.66671 11.3333 2.36823 11.3333 2.00004C11.3333 1.63185 11.0348 1.33337 10.6666 1.33337C10.2984 1.33337 9.99996 1.63185 9.99996 2.00004C9.99996 2.36823 10.2984 2.66671 10.6666 2.66671Z" stroke="#667085" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M1.33329 2.66671C1.70148 2.66671 1.99996 2.36823 1.99996 2.00004C1.99996 1.63185 1.70148 1.33337 1.33329 1.33337C0.965103 1.33337 0.666626 1.63185 0.666626 2.00004C0.666626 2.36823 0.965103 2.66671 1.33329 2.66671Z" stroke="#667085" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        </div>
+
+        <!-- status -->
+        <div class="flex items-center gap-[0.375rem]">
+        <div class="h-[0.375rem] w-[0.375rem] rounded-md bg-status"></div>
+        <p class="text-[0.75rem]"> 1 pending request </p>
+        </div>
+        </div>
+
+        </div>
+
+        <!-- heading controls -->
+        <div class=" flex items-center w-[6rem] h-1.5rem gap-[0.75rem]">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19 7L19 1M19 1H13M19 1L11 9M8 3H5.8C4.11984 3 3.27976 3 2.63803 3.32698C2.07354 3.6146 1.6146 4.07354 1.32698 4.63803C1 5.27976 1 6.11984 1 7.8V14.2C1 15.8802 1 16.7202 1.32698 17.362C1.6146 17.9265 2.07354 18.3854 2.63803 18.673C3.27976 19 4.11984 19 5.8 19H12.2C13.8802 19 14.7202 19 15.362 18.673C15.9265 18.3854 16.3854 17.9265 16.673 17.362C17 16.7202 17 15.8802 17 14.2V12" stroke="#344054" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 12H19" stroke="#344054" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13 1L1 13M1 1L13 13" stroke="#344054" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+         </div>
+    </div>
+     <!-- header section end -->
+
+        <!-- Chat Box START HERE ----->
+        <div 
+        id="chatBox" 
+        class="flex flex-col p-[1rem] h-[35.4375rem] gap-[1rem] overflow-y-auto hide-scrollbar">
+
+        <!-- Accepted notice wrapper START-->
+        <div id="acceptNotice" class="flex flex-col items-end w-full gap-y-[0.7rem] h-[16.625rem]">
+
+        <p class="text-[0.875rem] text-gray-700 font-400 text-center w-full italic leading-[1.25rem]">@grape has just sent you a live call request</p>
+
+        <div class="flex flex-col items-end h-[8.875rem] w-full gap-[0.25rem]">
+        <div class="relative w-full flex justify-center bg-white rounded-md gap-[0.375rem]">
+        <!-- left border -->
+        <div class="absolute w-[0.25rem] h-full left-0 bg-violetCream rounded-l-md"></div>
+        <div class="relative w-[20.3125rem] py-[0.5rem] gap-[0.375rem]">
+
+          <button onclick="" class="absolute right-[0]">
+          <span class="flex justify-center items-center w-[1rem] h-[1rem]">
+          <svg width="4" height="12" viewBox="0 0 4 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.00004 6.6665C2.36823 6.6665 2.66671 6.36803 2.66671 5.99984C2.66671 5.63165 2.36823 5.33317 2.00004 5.33317C1.63185 5.33317 1.33337 5.63165 1.33337 5.99984C1.33337 6.36803 1.63185 6.6665 2.00004 6.6665Z" stroke="#98A2B3" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2.00004 1.99984C2.36823 1.99984 2.66671 1.70136 2.66671 1.33317C2.66671 0.964981 2.36823 0.666504 2.00004 0.666504C1.63185 0.666504 1.33337 0.964981 1.33337 1.33317C1.33337 1.70136 1.63185 1.99984 2.00004 1.99984Z" stroke="#98A2B3" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2.00004 11.3332C2.36823 11.3332 2.66671 11.0347 2.66671 10.6665C2.66671 10.2983 2.36823 9.99984 2.00004 9.99984C1.63185 9.99984 1.33337 10.2983 1.33337 10.6665C1.33337 11.0347 1.63185 11.3332 2.00004 11.3332Z" stroke="#98A2B3" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          </span>
+          </button>
+
+          <span><p class="text-[1rem] text-gray-700 font-semibold leading-[1.5rem]">Call me and i will sing with you</p></span>
+          <p class="text-[0.875rem] text-gray-700 font-500 font-medium leading-[1.25rem] py-[0.5rem]">April 24, 2025 2:15pm-9:30pm</p>
+
+          <!-- button and status START-->
+          <div class=" flex items-center h-[1.125rem] justify-between">
+            <span class="flex items-center gap-[0.25rem]">
+            <span class="w-[1rem] h-[1rem]">
+            <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.00016 12.3335H8.00016M2.40016 1.3335H9.60016C9.97353 1.3335 10.1602 1.3335 10.3028 1.40616C10.4283 1.47007 10.5303 1.57206 10.5942 1.6975C10.6668 1.84011 10.6668 2.02679 10.6668 2.40016V3.78317C10.6668 4.10929 10.6668 4.27235 10.63 4.4258C10.5973 4.56185 10.5435 4.69191 10.4703 4.81121C10.3879 4.94576 10.2726 5.06107 10.042 5.29167L8.08774 7.24592C7.82373 7.50993 7.69173 7.64193 7.64227 7.79415C7.59876 7.92805 7.59876 8.07228 7.64227 8.20617C7.69173 8.35839 7.82373 8.4904 8.08774 8.75441L10.042 10.7087C10.2726 10.9393 10.3879 11.0546 10.4703 11.1891C10.5435 11.3084 10.5973 11.4385 10.63 11.5745C10.6668 11.728 10.6668 11.891 10.6668 12.2172V13.6002C10.6668 13.9735 10.6668 14.1602 10.5942 14.3028C10.5303 14.4283 10.4283 14.5303 10.3028 14.5942C10.1602 14.6668 9.97353 14.6668 9.60016 14.6668H2.40016C2.02679 14.6668 1.84011 14.6668 1.6975 14.5942C1.57206 14.5303 1.47007 14.4283 1.40616 14.3028C1.3335 14.1602 1.3335 13.9735 1.3335 13.6002V12.2172C1.3335 11.891 1.3335 11.728 1.37034 11.5745C1.403 11.4385 1.45687 11.3084 1.52998 11.1891C1.61243 11.0546 1.72773 10.9393 1.95833 10.7087L3.91258 8.75441C4.17659 8.4904 4.3086 8.35839 4.35806 8.20617C4.40156 8.07228 4.40156 7.92805 4.35806 7.79415C4.3086 7.64193 4.17659 7.50992 3.91258 7.24592L1.95833 5.29167C1.72773 5.06107 1.61243 4.94576 1.52998 4.81121C1.45687 4.69191 1.403 4.56185 1.37034 4.4258C1.3335 4.27235 1.3335 4.10929 1.3335 3.78317V2.40016C1.3335 2.02679 1.3335 1.84011 1.40616 1.6975C1.47007 1.57206 1.57206 1.47007 1.6975 1.40616C1.84011 1.3335 2.02679 1.3335 2.40016 1.3335Z" stroke="#667085" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            </span>
+            <p class="text-[0.75rem] text-gray-500 font-regular leading-[1.125rem]">Waiting for response</p>
+            </span>
+
+            <!-- View in Calendar -->
+            <div class="flex items-center h-[1.625rem] gap-[0.25rem] px-[0.5rem] py-[0.1875rem]">
+              <button onclick="" class="text-[0.75rem] leading-[1.125rem] text-violetCream font-medium">
+              View Details
+              </button>
+              <span class="flex items-center justify-center w-[1rem] h-[1rem]"> 
+              <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.666626 7.33317L7.33329 0.666504M7.33329 0.666504H0.666626M7.33329 0.666504V7.33317" stroke="#4640FF" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>    
+              </span>
+            </div>
+        </div>
+        <!-- button and status END-->
+
+         </div>
+         </div>
+        </div>
+
+        <p class="py-[0.375rem] px-[0.75rem] text-[1rem] text-gray-700 text-end font-regular rounded-t-[0.9375rem] rounded-l-[0.9375rem] bg-white">Please accept my booking</p>
+        <p class="py-[0.375rem] px-[0.75rem] text-[1rem] text-gray-700 text-end font-regular rounded-t-[0.9375rem] rounded-l-[0.9375rem] bg-white">It's my birthday that day</p>
+
+        <!-- user avatar -->
+        <div class="flex items-center justify-between w-[4.9375rem] h-[1.5rem]">
+            <p class="text-[0.75rem] text-gray-500 leading-[1.125rem]">2:30pm</p>
+            <div class="bg-[url(./img/GrapesAvatar.png)] bg-cover bg-center w-[1.5rem] h-[1.5rem] mask-mango"></div>
+        </div>
+        </div>
+
+
+        <!-- Attachment wrapper END -->
+
+        <!-- Artits msg start -->
+        <div class="flex flex-col w-max h-max gap-y-[0.25rem]">
+        <p class="bg-gray-600 text-white flex items-center w-max py-[0.375rem] px-[0.75rem] rounded-t-[0.9375rem] rounded-r-[0.9375rem]">Let me check my schedule</p>
+        <!-- avatar andtime  -->
+        <div class="flex items-center justify-between w-[4.9375rem]">
+            <div class="w-[1.5rem] h-[1.5rem] bg-[url(./img/artistAvatar.png)] bg-cover bg-center mask-mango"></div>
+            <p class="text-gray-500 text-[0.75rem]">2:30pm</p>
+        </div>
+        </div>
+
+
+
+        <!-- DECLINED NOTICE WRAPPER START-->
+        <div class="flex flex-col items-start w-full py-[0.5rem] gap-[0.5rem] h-auto">
+
+        <p class="text-[0.875rem] text-gray-700 font-400 text-center w-full italic leading-[1.25rem]">@Jennyhoney has just declined your booking</p>
+
+        <div class="flex flex-col items-end h-auto w-full gap-[0.25rem]">
+        <div class="relative w-full flex justify-center bg-white rounded-md gap-[0.75rem]">
+        <!-- left border -->
+        <div class="absolute w-[0.25rem] h-full left-0 bg-violetCream rounded-l-md"></div>
+        <div class="relative flex flex-col w-[20.3125rem] py-[0.5rem] gap-[0.75rem]">
+
+          <span class="flex flex-col gap-[0.5rem]">
+          <button onclick="" class="absolute right-[0]">
+          <span class="flex justify-center items-center w-[1rem] h-[1rem]">
+          <svg width="4" height="12" viewBox="0 0 4 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.00004 6.6665C2.36823 6.6665 2.66671 6.36803 2.66671 5.99984C2.66671 5.63165 2.36823 5.33317 2.00004 5.33317C1.63185 5.33317 1.33337 5.63165 1.33337 5.99984C1.33337 6.36803 1.63185 6.6665 2.00004 6.6665Z" stroke="#98A2B3" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2.00004 1.99984C2.36823 1.99984 2.66671 1.70136 2.66671 1.33317C2.66671 0.964981 2.36823 0.666504 2.00004 0.666504C1.63185 0.666504 1.33337 0.964981 1.33337 1.33317C1.33337 1.70136 1.63185 1.99984 2.00004 1.99984Z" stroke="#98A2B3" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2.00004 11.3332C2.36823 11.3332 2.66671 11.0347 2.66671 10.6665C2.66671 10.2983 2.36823 9.99984 2.00004 9.99984C1.63185 9.99984 1.33337 10.2983 1.33337 10.6665C1.33337 11.0347 1.63185 11.3332 2.00004 11.3332Z" stroke="#98A2B3" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          </span>
+          </button>
+
+          <p class="text-[1rem] text-gray-700 font-semibold leading-[1.5rem]">Call me and i will sing with you</p>
+          <p class="text-[0.875rem] text-gray-700 font-500 font-medium leading-[1.25rem] py-[0.5rem]">April 24, 2025 2:15pm-9:30pm</p>
+
+          <span class="flex items-center justify-between w-[3.6875rem] border">
+
+          <span>
+          <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="3" cy="3" r="3" fill="#FF0066"/>
+          </svg>
+          </span>
+
+          <p class="text-[0.75rem] font-medium leading-[1.125rem] text-brightPink">in 5 min</p>
+          </span>
+          </span>
+
+          <!-- buttons START-->
+          <div class=" flex items-center gap-[0.5rem]">
+            <button class="flex items-center justify-center w-full py-[0.1875rem] gap-[0.25rem] bg-lightViolet rounded-[0.25rem]">
+            <span class="w-[1rem] h-[1rem]">
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.7499 1L8.41657 3.33333M8.41657 3.33333L10.7499 5.66667M8.41657 3.33333H13.7499M6.56792 8.24205C5.76687 7.44099 5.13435 6.53523 4.67035 5.56882C4.63044 5.48569 4.61048 5.44413 4.59515 5.39154C4.54067 5.20463 4.5798 4.97513 4.69314 4.81684C4.72504 4.7723 4.76314 4.7342 4.83935 4.65799C5.07242 4.42492 5.18895 4.30838 5.26514 4.1912C5.55247 3.74927 5.55247 3.17955 5.26515 2.73762C5.18895 2.62044 5.07242 2.5039 4.83935 2.27083L4.70943 2.14092C4.35514 1.78662 4.17799 1.60947 3.98774 1.51324C3.60937 1.32186 3.16252 1.32186 2.78415 1.51324C2.59389 1.60947 2.41675 1.78662 2.06245 2.14092L1.95736 2.24601C1.60428 2.59909 1.42774 2.77563 1.29291 3.01565C1.14329 3.28199 1.03572 3.69565 1.03663 4.00113C1.03745 4.27643 1.09085 4.46458 1.19765 4.84087C1.77163 6.86314 2.85462 8.77138 4.4466 10.3634C6.03859 11.9554 7.94683 13.0383 9.96909 13.6123C10.3454 13.7191 10.5335 13.7725 10.8088 13.7733C11.1143 13.7743 11.528 13.6667 11.7943 13.5171C12.0343 13.3822 12.2109 13.2057 12.564 12.8526L12.6691 12.7475C13.0233 12.3932 13.2005 12.2161 13.2967 12.0258C13.4881 11.6474 13.4881 11.2006 13.2967 10.8222C13.2005 10.632 13.0233 10.4548 12.6691 10.1005L12.5391 9.97062C12.3061 9.73755 12.1895 9.62101 12.0723 9.54482C11.6304 9.25749 11.0607 9.2575 10.6188 9.54482C10.5016 9.62102 10.3851 9.73755 10.152 9.97062C10.0758 10.0468 10.0377 10.0849 9.99313 10.1168C9.83484 10.2302 9.60534 10.2693 9.41843 10.2148C9.36584 10.1995 9.32428 10.1795 9.24115 10.1396C8.27474 9.67562 7.36898 9.0431 6.56792 8.24205Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            </span>
+            <p class="text-[0.875rem] text-white font-semibold leading-[1.25rem]">Join Call</p>
+            </button>
+
+            <!-- View in Calendar -->
+            <button class="flex items-center justify-center w-full py-[0.1875rem] gap-[0.25rem] border border-lightViolet rounded-[0.25rem]">
+              <span class="flex items-center justify-center w-[1rem] h-[1rem]"> 
+              <svg width="13" height="4" viewBox="0 0 13 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.24984 2.66683C6.61803 2.66683 6.9165 2.36835 6.9165 2.00016C6.9165 1.63197 6.61803 1.3335 6.24984 1.3335C5.88165 1.3335 5.58317 1.63197 5.58317 2.00016C5.58317 2.36835 5.88165 2.66683 6.24984 2.66683Z" stroke="#5549FF" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M10.9165 2.66683C11.2847 2.66683 11.5832 2.36835 11.5832 2.00016C11.5832 1.63197 11.2847 1.3335 10.9165 1.3335C10.5483 1.3335 10.2498 1.63197 10.2498 2.00016C10.2498 2.36835 10.5483 2.66683 10.9165 2.66683Z" stroke="#5549FF" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M1.58317 2.66683C1.95136 2.66683 2.24984 2.36835 2.24984 2.00016C2.24984 1.63197 1.95136 1.3335 1.58317 1.3335C1.21498 1.3335 0.916504 1.63197 0.916504 2.00016C0.916504 2.36835 1.21498 2.66683 1.58317 2.66683Z" stroke="#5549FF" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              </span>
+              <p onclick="" class="text-[0.75rem] leading-[1.125rem] text-violetCream font-semibold">
+              Other Options
+              </p>
+            </button>
+            </div>
+            <!-- button and status END-->
+         </div>
+         </div>
+        </div>
+
+        </div>
+        <!-- DECLINED NOTICE WRAPPER END -->
+
+
+        <!-- PRICE ADJUST WRAPPER START --->
+        <div id="" class="flex flex-col w-full py-[0.5rem] gap-y-[0.7rem]">
+        <p class="text-[0.875rem] text-gray-700 font-400 text-center italic leading-[1.25rem]">@Jennyhoney has adjust the cost of the booking</p>
+        <div class="flex flex-col items-end gap-[0.25rem]">
+        <div class="relative w-full  flex justify-center bg-white rounded-md gap-[0.375rem]">
+        <!-- left border -->
+        <div class="absolute w-[0.25rem] h-full left-0 bg-violetCream rounded-l-md"></div>
+        <div class="relative flex flex-col w-[20.3125rem] py-[0.5rem] gap-[0.75rem]">
+
+         <span class="flex flex-col h-[5.25rem] gap-[0.5rem]">
+          <button onclick="" class="absolute right-[0]">
+          <span class="flex justify-center items-center w-[1rem] h-[1rem]">
+          <svg width="4" height="12" viewBox="0 0 4 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.00004 6.6665C2.36823 6.6665 2.66671 6.36803 2.66671 5.99984C2.66671 5.63165 2.36823 5.33317 2.00004 5.33317C1.63185 5.33317 1.33337 5.63165 1.33337 5.99984C1.33337 6.36803 1.63185 6.6665 2.00004 6.6665Z" stroke="#98A2B3" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2.00004 1.99984C2.36823 1.99984 2.66671 1.70136 2.66671 1.33317C2.66671 0.964981 2.36823 0.666504 2.00004 0.666504C1.63185 0.666504 1.33337 0.964981 1.33337 1.33317C1.33337 1.70136 1.63185 1.99984 2.00004 1.99984Z" stroke="#98A2B3" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2.00004 11.3332C2.36823 11.3332 2.66671 11.0347 2.66671 10.6665C2.66671 10.2983 2.36823 9.99984 2.00004 9.99984C1.63185 9.99984 1.33337 10.2983 1.33337 10.6665C1.33337 11.0347 1.63185 11.3332 2.00004 11.3332Z" stroke="#98A2B3" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          </span>
+          </button>
+
+         <p class="text-[1rem] text-gray-700 font-semibold leading-[1.5rem]">Call me and i will sing with you</p>
+         <p class="text-[0.875rem] text-gray-700 font-500 font-medium h-[1.25rem]">April 24, 2025 2:15pm-9:30pm</p>
+         <p class="text-[1rem] font-semibold leading-[1.5rem] text-violetCream"><span class="text-gray-500 line-through ">500</span> 1337 Token</p>
+         </span>
+
+
+        <span class="flex flex-col gap-[0.5rem] h-[5.5rem]">
+        <span class="flex flex-col gap-[0.25rem]">
+          <p class="text-lightViolet text-[0.75rem] font-regular leading-[1.125rem]">@jennyhunny's remarks:</p>
+          <h3 class=" h-[2.5rem] overflow-hidden text-[0.875rem] text-lightViolet leading-[1.25rem] line-clamp-2">I charge a flat rate of 500 tokens for each personal request. for you I need to charge USD 40 worth of tokens more for the special costume you requested on top of that.
+          </h3>
+        </span>
+          <button class="flex">
+          <p class="text-[0.75rem] text-lightViolet font-medium leading-[1.125rem]">View detail</p>
+          <span class="w-[1rem] h-[1rem]">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4.6665 8.66667L7.99984 12L11.3332 8.66667M4.6665 4L7.99984 7.33333L11.3332 4" stroke="#5549FF" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          </span>
+          </button>
+         </span>
+
+         <!-- button and status -->
+        <div class=" flex items-center h-[1.625rem] gap-[0.25rem]">
+            <button class="text-[0.875rem] text-teal-500 font-semibold leading-[1.25rem] w-full py-[0.1875rem] border border-teal-500 rounded-[0.25rem]">
+              Accept New Time
+            </button>
+            <button onclick="" class="text-[0.875rem] text-orangeButton font-semibold leading-[1.25rem] w-full py-[0.1875rem] border border-orangeButton rounded-[0.25rem]">
+              Reject
+            </button>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <!-- User msg START -->
+        <div class="flex flex-col justify-center w-full h-max gap-[0.25rem]">
+        <p class=" bg-gray-600 text-white flex items-center w-auto py-[0.375rem] px-[0.75rem] rounded-t-[0.9375rem] rounded-r-[0.9375rem]">I adjusted the price of the session, please review my remarks and confirm it</p>
+
+        <!-- avatar andtime  -->
+        <div class="flex items-center justify-between w-[4.9375rem]">
+            <div class="w-[1.5rem] h-[1.5rem] bg-[url(./img/artistAvatar.png)] bg-cover bg-center mask-mango"></div>
+            <p class="text-gray-500 text-[0.75rem]">2:30pm</p>
+        </div>
+        </div>
+        <!-- User msg END -->
+        </div>
+        <!-- PRICE ADJUST WRAPPER END --->
+
+
+        <!-- ACCEPTED NOTIF WRAPPER START----->
+        <div id="acceptNotice" class="flex flex-col w-full py-[0.5rem] gap-y-[0.7rem] h-[9.375rem]">
+        <p class="text-[0.875rem] text-gray-700 font-400 text-center italic leading-[1.25rem]">@Jennyhoney accepted your request to postpone call</p>
+        <div class="flex flex-col items-end gap-[0.25rem]">
+        <div class="relative w-full flex justify-center bg-white rounded-md gap-[0.375rem]">
+        <!-- left border -->
+        <div class="absolute w-[0.25rem] h-full left-0 bg-violetCream rounded-l-md"></div>
+        <div class="relative w-[20.3125rem] py-[0.5rem] gap-[0.375rem]">
+
+          <button onclick="" class="absolute right-[0]">
+          <span class="flex justify-center items-center w-[1rem] h-[1rem]">
+          <svg width="4" height="12" viewBox="0 0 4 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.00004 6.6665C2.36823 6.6665 2.66671 6.36803 2.66671 5.99984C2.66671 5.63165 2.36823 5.33317 2.00004 5.33317C1.63185 5.33317 1.33337 5.63165 1.33337 5.99984C1.33337 6.36803 1.63185 6.6665 2.00004 6.6665Z" stroke="#98A2B3" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2.00004 1.99984C2.36823 1.99984 2.66671 1.70136 2.66671 1.33317C2.66671 0.964981 2.36823 0.666504 2.00004 0.666504C1.63185 0.666504 1.33337 0.964981 1.33337 1.33317C1.33337 1.70136 1.63185 1.99984 2.00004 1.99984Z" stroke="#98A2B3" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2.00004 11.3332C2.36823 11.3332 2.66671 11.0347 2.66671 10.6665C2.66671 10.2983 2.36823 9.99984 2.00004 9.99984C1.63185 9.99984 1.33337 10.2983 1.33337 10.6665C1.33337 11.0347 1.63185 11.3332 2.00004 11.3332Z" stroke="#98A2B3" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          </span>
+          </button>
+
+         <span><p class="text-[1rem] text-gray-700 font-semibold leading-[1.5rem]">Call me and i will sing with you</p></span>
+         <p class="text-[0.875rem] text-gray-700 font-500 font-medium leading-[1.25rem] py-[0.5rem]">April 24, 2025 2:15pm-9:30pm</p>
+
+            <div class=" flex items-center justify-between">
+            <span class="flex items-center gap-[0.25rem]">
+
+            <span class="w-[1rem] h-[1rem]">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.6666 7.39065V8.00398C14.6658 9.44159 14.2003 10.8404 13.3395 11.9919C12.4787 13.1433 11.2688 13.9856 9.89016 14.3932C8.51154 14.8009 7.03809 14.7519 5.68957 14.2537C4.34104 13.7555 3.18969 12.8347 2.40723 11.6287C1.62476 10.4227 1.25311 8.99602 1.3477 7.56152C1.44229 6.12702 1.99806 4.76153 2.93211 3.66869C3.86615 2.57586 5.12844 1.81423 6.53071 1.49741C7.93298 1.18059 9.4001 1.32554 10.7133 1.91065M14.6666 2.66683L7.99992 9.34016L5.99992 7.34016" stroke="#15B79E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+
+            </span>
+            <p class="text-[0.875rem] text-teal-500 font-semibold">Accepted</p>
+            </span>
+
+            <!-- View details -->
+            <div class="flex items-center h-[1.625rem] gap-[0.25rem] px-[0.5rem] py-[0.1875rem]">
+
+              <button onclick="" class="text-[0.75rem] leading-[1.125rem] text-violetCream font-medium">
+              View details
+              </button>
+              <span class="flex items-center justify-center w-[1rem] h-[1rem]"> 
+              <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.666626 7.33317L7.33329 0.666504M7.33329 0.666504H0.666626M7.33329 0.666504V7.33317" stroke="#4640FF" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>    
+              </span>
+
+            </div>
+            </div>
+         </div>
+         </div>
+
+        </div>
+        </div>
+        <!-- Accepted Notif WRAPPER END -->
+
+
+        <!-- REJECTED NOTICE WRAPPER START-->
+        <div class="flex flex-col items-start w-full py-[0.5rem] gap-[0.5rem] h-auto">
+
+        <p class="text-[0.875rem] text-gray-700 font-400 text-center w-full italic leading-[1.25rem]">@Jennyhoney has just rejected your request to postponed call,</p>
+
+        <div class="flex flex-col items-end h-auto w-full gap-[0.25rem]">
+        <div class="relative w-full flex justify-center bg-white rounded-md gap-[0.75rem]">
+        <!-- left border -->
+        <div class="absolute w-[0.25rem] h-full left-0 bg-violetCream rounded-l-md"></div>
+        <div class="relative flex flex-col w-[20.3125rem] py-[0.5rem] gap-[0.75rem]">
+
+          <span class="flex flex-col gap-[0.5rem]">
+          <button onclick="" class="absolute right-[0]">
+          <span class="flex justify-center items-center w-[1rem] h-[1rem]">
+          <svg width="4" height="12" viewBox="0 0 4 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.00004 6.6665C2.36823 6.6665 2.66671 6.36803 2.66671 5.99984C2.66671 5.63165 2.36823 5.33317 2.00004 5.33317C1.63185 5.33317 1.33337 5.63165 1.33337 5.99984C1.33337 6.36803 1.63185 6.6665 2.00004 6.6665Z" stroke="#98A2B3" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2.00004 1.99984C2.36823 1.99984 2.66671 1.70136 2.66671 1.33317C2.66671 0.964981 2.36823 0.666504 2.00004 0.666504C1.63185 0.666504 1.33337 0.964981 1.33337 1.33317C1.33337 1.70136 1.63185 1.99984 2.00004 1.99984Z" stroke="#98A2B3" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2.00004 11.3332C2.36823 11.3332 2.66671 11.0347 2.66671 10.6665C2.66671 10.2983 2.36823 9.99984 2.00004 9.99984C1.63185 9.99984 1.33337 10.2983 1.33337 10.6665C1.33337 11.0347 1.63185 11.3332 2.00004 11.3332Z" stroke="#98A2B3" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          </span>
+          </button>
+
+          <p class="text-[1rem] text-gray-700 font-semibold leading-[1.5rem]">Call me and i will sing with you</p>
+          <p class="text-[0.875rem] text-gray-700 font-500 font-medium leading-[1.25rem] py-[0.5rem]">April 24, 2025 2:15pm-9:30pm</p>
+
+          <span class="flex items-center justify-between w-[3.6875rem]">
+
+          <span>
+          <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="3" cy="3" r="3" fill="#FF0066"/>
+          </svg>
+          </span>
+
+          <p class="text-[0.75rem] font-medium leading-[1.125rem] text-brightPink">in 2 min</p>
+          </span>
+          </span>
+
+          <!-- buttons START-->
+          <div class=" flex items-center gap-[0.5rem]">
+            <button class="flex items-center justify-center w-full py-[0.1875rem] gap-[0.25rem] bg-lightViolet rounded-[0.25rem]">
+            <span class="w-[1rem] h-[1rem]">
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.7499 1L8.41657 3.33333M8.41657 3.33333L10.7499 5.66667M8.41657 3.33333H13.7499M6.56792 8.24205C5.76687 7.44099 5.13435 6.53523 4.67035 5.56882C4.63044 5.48569 4.61048 5.44413 4.59515 5.39154C4.54067 5.20463 4.5798 4.97513 4.69314 4.81684C4.72504 4.7723 4.76314 4.7342 4.83935 4.65799C5.07242 4.42492 5.18895 4.30838 5.26514 4.1912C5.55247 3.74927 5.55247 3.17955 5.26515 2.73762C5.18895 2.62044 5.07242 2.5039 4.83935 2.27083L4.70943 2.14092C4.35514 1.78662 4.17799 1.60947 3.98774 1.51324C3.60937 1.32186 3.16252 1.32186 2.78415 1.51324C2.59389 1.60947 2.41675 1.78662 2.06245 2.14092L1.95736 2.24601C1.60428 2.59909 1.42774 2.77563 1.29291 3.01565C1.14329 3.28199 1.03572 3.69565 1.03663 4.00113C1.03745 4.27643 1.09085 4.46458 1.19765 4.84087C1.77163 6.86314 2.85462 8.77138 4.4466 10.3634C6.03859 11.9554 7.94683 13.0383 9.96909 13.6123C10.3454 13.7191 10.5335 13.7725 10.8088 13.7733C11.1143 13.7743 11.528 13.6667 11.7943 13.5171C12.0343 13.3822 12.2109 13.2057 12.564 12.8526L12.6691 12.7475C13.0233 12.3932 13.2005 12.2161 13.2967 12.0258C13.4881 11.6474 13.4881 11.2006 13.2967 10.8222C13.2005 10.632 13.0233 10.4548 12.6691 10.1005L12.5391 9.97062C12.3061 9.73755 12.1895 9.62101 12.0723 9.54482C11.6304 9.25749 11.0607 9.2575 10.6188 9.54482C10.5016 9.62102 10.3851 9.73755 10.152 9.97062C10.0758 10.0468 10.0377 10.0849 9.99313 10.1168C9.83484 10.2302 9.60534 10.2693 9.41843 10.2148C9.36584 10.1995 9.32428 10.1795 9.24115 10.1396C8.27474 9.67562 7.36898 9.0431 6.56792 8.24205Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            </span>
+            <p class="text-[0.875rem] text-white font-semibold leading-[1.25rem]">Join Call</p>
+            </button>
+
+            <!-- View in Calendar -->
+            <button class="flex items-center justify-center w-full py-[0.1875rem] gap-[0.25rem] border border-lightViolet rounded-[0.25rem]">
+              <span class="flex items-center justify-center w-[1rem] h-[1rem]"> 
+              <svg width="13" height="4" viewBox="0 0 13 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.24984 2.66683C6.61803 2.66683 6.9165 2.36835 6.9165 2.00016C6.9165 1.63197 6.61803 1.3335 6.24984 1.3335C5.88165 1.3335 5.58317 1.63197 5.58317 2.00016C5.58317 2.36835 5.88165 2.66683 6.24984 2.66683Z" stroke="#5549FF" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M10.9165 2.66683C11.2847 2.66683 11.5832 2.36835 11.5832 2.00016C11.5832 1.63197 11.2847 1.3335 10.9165 1.3335C10.5483 1.3335 10.2498 1.63197 10.2498 2.00016C10.2498 2.36835 10.5483 2.66683 10.9165 2.66683Z" stroke="#5549FF" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M1.58317 2.66683C1.95136 2.66683 2.24984 2.36835 2.24984 2.00016C2.24984 1.63197 1.95136 1.3335 1.58317 1.3335C1.21498 1.3335 0.916504 1.63197 0.916504 2.00016C0.916504 2.36835 1.21498 2.66683 1.58317 2.66683Z" stroke="#5549FF" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              </span>
+              <p onclick="" class="text-[0.75rem] leading-[1.125rem] text-violetCream font-semibold">
+              Other Options
+              </p>
+            </button>
+            </div>
+            <!-- button and status END-->
+         </div>
+         </div>
+        </div>
+
+        </div>
+        <!-- REJECTED NOTICE WRAPPER END -->
+
+
+
+
+
+
+        <!-- bottom spacer -->
+        <!-- <div class="w-full bg-background-green h-[1rem]"></div> -->
+        </div>
+        <!---- Chat box END ---->
+
+        </div>
+        <!-- convo bubble overflow END -->
+
+
+        
+        <!-- INPUT FIELD SECTION -->
+        <div class=" flex items-center justify-center h-[3.5rem] gap-[0.625rem] bg-white rounded-b-[0.5rem]">
+
+        <!-- avatar -->
+        <div class="h-[1.5rem] w-[1.5rem] bg-[url(./img/GrapesAvatar.png)] bg-cover bg-center mask-mango">
+        </div>
+
+        <input class="outline-none w-[16.0625rem] text-gray-500 text-[1rem]" type="text" placeholder="Write a reply...">
+
+        <!-- emoji -->
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7 13C7 13 8.5 15 11 15C13.5 15 15 13 15 13M14 8H14.01M8 8H8.01M21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11ZM14.5 8C14.5 8.27614 14.2761 8.5 14 8.5C13.7239 8.5 13.5 8.27614 13.5 8C13.5 7.72386 13.7239 7.5 14 7.5C14.2761 7.5 14.5 7.72386 14.5 8ZM8.5 8C8.5 8.27614 8.27614 8.5 8 8.5C7.72386 8.5 7.5 8.27614 7.5 8C7.5 7.72386 7.72386 7.5 8 7.5C8.27614 7.5 8.5 7.72386 8.5 8Z" stroke="#0C111D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+        <!-- attachment -->
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 6V14M6 10H14M5.8 19H14.2C15.8802 19 16.7202 19 17.362 18.673C17.9265 18.3854 18.3854 17.9265 18.673 17.362C19 16.7202 19 15.8802 19 14.2V5.8C19 4.11984 19 3.27976 18.673 2.63803C18.3854 2.07354 17.9265 1.6146 17.362 1.32698C16.7202 1 15.8802 1 14.2 1H5.8C4.11984 1 3.27976 1 2.63803 1.32698C2.07354 1.6146 1.6146 2.07354 1.32698 2.63803C1 3.27976 1 4.11984 1 5.8V14.2C1 15.8802 1 16.7202 1.32698 17.362C1.6146 17.9265 2.07354 18.3854 2.63803 18.673C3.27976 19 4.11984 19 5.8 19Z" stroke="#0C111D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    </div>
+    <!-- FAN MESSAGE WRAPPER END -->
+
+
+
+    <!-- POP-UP COMPONENTS START HERE -->
+    <!-- MORE OPTION -->
+    <div class="absolute flex flex-col top-[63%] left-[30%] z-[10] shadow-custom2">
+    <section class="flex items-center justify-center gap-[0.5rem] p-[0.5rem] bg-white hover:bg-gray-200">
+    <span class="w-[1rem] h-[1rem]">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M14.614 8.84349C14.6489 8.56729 14.6668 8.28582 14.6668 8.00016C14.6668 4.31826 11.6821 1.3335 8.00016 1.3335C4.31826 1.3335 1.3335 4.31826 1.3335 8.00016C1.3335 11.6821 4.31826 14.6668 8.00016 14.6668C8.29043 14.6668 8.57637 14.6483 8.85685 14.6123M8.00016 4.00016V8.00016L10.4924 9.24629M12.6668 14.6668V10.6668M10.6668 12.6668H14.6668" stroke="#344054" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    </span>
+    <p class="text-[0.75rem] text-gray-700 font-semibold leading-[1.125rem]">Ask for more time</p>
+    </section>
+
+    <section class="flex items-center justify-center gap-[0.5rem] p-[0.5rem] bg-white hover:bg-gray-200">
+    <span class="w-[1rem] h-[1rem]">
+    <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M13 6.66683H1M9.66667 1.3335V4.00016M4.33333 1.3335V4.00016M6 9.3335L7 8.66683V12.0002M6.16667 12.0002H7.83333M4.2 14.6668H9.8C10.9201 14.6668 11.4802 14.6668 11.908 14.4488C12.2843 14.2571 12.5903 13.9511 12.782 13.5748C13 13.147 13 12.5869 13 11.4668V5.86683C13 4.74672 13 4.18667 12.782 3.75885C12.5903 3.38252 12.2843 3.07656 11.908 2.88482C11.4802 2.66683 10.9201 2.66683 9.8 2.66683H4.2C3.0799 2.66683 2.51984 2.66683 2.09202 2.88482C1.71569 3.07656 1.40973 3.38252 1.21799 3.75885C1 4.18667 1 4.74672 1 5.86683V11.4668C1 12.5869 1 13.147 1.21799 13.5748C1.40973 13.9511 1.71569 14.2571 2.09202 14.4488C2.51984 14.6668 3.0799 14.6668 4.2 14.6668Z" stroke="#344054" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    </span>
+    <p class="text-[0.75rem] text-gray-700 font-semibold leading-[1.125rem]">Ask to reschedule</p>
+    </section>
+
+    <section class="flex items-center justify-start gap-[0.5rem] p-[0.5rem] bg-white hover:bg-gray-200">
+    <span class="w-[1rem] h-[1rem]">
+    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M13.9999 1L9.9999 5M9.9999 1L13.9999 5M6.81792 8.24205C6.01687 7.44099 5.38435 6.53523 4.92035 5.56882C4.88044 5.48569 4.86048 5.44413 4.84515 5.39154C4.79067 5.20463 4.8298 4.97513 4.94314 4.81684C4.97504 4.7723 5.01314 4.7342 5.08935 4.65799C5.32242 4.42492 5.43895 4.30838 5.51514 4.1912C5.80247 3.74927 5.80247 3.17955 5.51515 2.73762C5.43895 2.62044 5.32242 2.5039 5.08935 2.27083L4.95943 2.14092C4.60514 1.78662 4.42799 1.60947 4.23774 1.51324C3.85937 1.32186 3.41252 1.32186 3.03415 1.51324C2.84389 1.60947 2.66675 1.78662 2.31245 2.14092L2.20736 2.24601C1.85428 2.59909 1.67774 2.77563 1.54291 3.01565C1.39329 3.28199 1.28572 3.69565 1.28663 4.00113C1.28745 4.27643 1.34085 4.46458 1.44765 4.84087C2.02163 6.86314 3.10462 8.77138 4.6966 10.3634C6.28859 11.9554 8.19683 13.0383 10.2191 13.6123C10.5954 13.7191 10.7835 13.7725 11.0588 13.7733C11.3643 13.7743 11.778 13.6667 12.0443 13.5171C12.2843 13.3822 12.4609 13.2057 12.814 12.8526L12.9191 12.7475C13.2733 12.3932 13.4505 12.2161 13.5467 12.0258C13.7381 11.6474 13.7381 11.2006 13.5467 10.8222C13.4505 10.632 13.2733 10.4548 12.9191 10.1005L12.7891 9.97062C12.5561 9.73755 12.4395 9.62101 12.3223 9.54482C11.8804 9.25749 11.3107 9.2575 10.8688 9.54482C10.7516 9.62102 10.6351 9.73755 10.402 9.97062C10.3258 10.0468 10.2877 10.0849 10.2431 10.1168C10.0848 10.2302 9.85534 10.2693 9.66843 10.2148C9.61584 10.1995 9.57428 10.1795 9.49115 10.1396C8.52474 9.67562 7.61898 9.0431 6.81792 8.24205Z" stroke="#FF4405" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    </span>
+    <p class="text-[0.75rem] text-gray-700 text-orangeDark font-semibold leading-[1.125rem]">Cancel Call</p>
+    </section>
+    </div>
+    <!-- MORE OPTION END -->
+
+    <!-- ADJUST REQUEST ASK FOR MORE TIME COMPONENT START-->
+    <div class="absolute flex flex-col w-[22.0625rem] gap-[1.5rem] top-[5rem] left-[40%] z-[10] bg-gray-100 shadow-custom2 p-[1rem] rounded-[0.625rem]">
+    <section class="flex items-center justify-between gap-[0.5rem]">
+
+    <span class="flex itmes-center gap-[0.5rem]">
+    <span class="w-[1rem] h-[1rem]">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M14.614 8.84349C14.6489 8.56729 14.6668 8.28582 14.6668 8.00016C14.6668 4.31826 11.6821 1.3335 8.00016 1.3335C4.31826 1.3335 1.3335 4.31826 1.3335 8.00016C1.3335 11.6821 4.31826 14.6668 8.00016 14.6668C8.29043 14.6668 8.57637 14.6483 8.85685 14.6123M8.00016 4.00016V8.00016L10.4924 9.24629M12.6668 14.6668V10.6668M10.6668 12.6668H14.6668" stroke="#344054" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    </span>
+    <p class="text-[0.75rem] text-gray-700 font-semibold leading-[1.125rem]">Ask for more time</p>
+    </span>
+
+    <span class="w-[0.625rem] h-[0.625rem]">
+    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M11 1L1 11M1 1L11 11" stroke="#667085" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    </span>
+    </section>
+
+    <section class="flex flex-col items-start justify-start gap-[0.5rem] py-[0.5rem]">
+    <p class="text-[0.875rem] text-gray-500 font-medium leading-[1.25rem]">Event date</p>
+    <p class="text-[1rem] text-black font-medium leading-[1.25rem]">April 25, 2025</p>
+    </section>
+
+    <section class="flex flex-col justify-start gap-[0.5rem] py-[0.5rem] w-[20.0625rem]">
+    <p class="text-[0.875rem] text-gray-500 font-medium leading-[1.25rem]">New start time</p>
+
+    <span class="flex items-center gap-[0.5rem]">
+    <span class="flex bg-white rounded-[0.125rem] border-b border-gray-300">
+    <input type="text" value="9:30pm" class="flex py-[0.5rem] pl-[0.75rem] w-[6.78125rem]"/>
+    <span class="flex items-center justify-center w-[3rem] h-[2.5rem] bg-white">
+    <svg width="11" height="16" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1.3335 10.5002L5.50016 14.6668L9.66683 10.5002M1.3335 5.50016L5.50016 1.3335L9.66683 5.50016" stroke="#344054" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    </span>
+    </span>
+    <p class="text-[1rem] text-black font-medium leading-[1.25rem]">-10:30pm</p>
+    </span>
+
+    <p class="text-[0.875rem] text-gray-600 font-regular leading-[1.25rem]">Original start time 9:15pm</p>
+    </section>
+
+    <button class="flex items-center justify-center gap-[0.5rem] p-[0.5rem] bg-background-green ">
+    <p class="text-[1rem] text-gray-950 font-medium leading-[1.5rem]">Send request to @jennyhoney</p>
+    <span class="w-[1.5rem] h-[1.5rem]">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2162 11.9998H5.00043M4.91577 12.2913L2.58085 19.266C2.39742 19.8139 2.3057 20.0879 2.37152 20.2566C2.42868 20.4031 2.55144 20.5142 2.70292 20.5565C2.87736 20.6052 3.14083 20.4866 3.66776 20.2495L20.3792 12.7293C20.8936 12.4979 21.1507 12.3822 21.2302 12.2214C21.2993 12.0817 21.2993 11.9179 21.2302 11.7782C21.1507 11.6174 20.8936 11.5017 20.3792 11.2703L3.66193 3.74751C3.13659 3.51111 2.87392 3.39291 2.69966 3.4414C2.54832 3.48351 2.42556 3.59429 2.36821 3.74054C2.30216 3.90893 2.3929 4.18231 2.57437 4.72906L4.91642 11.7853C4.94759 11.8792 4.96317 11.9262 4.96933 11.9742C4.97479 12.0168 4.97473 12.0599 4.96916 12.1025C4.96289 12.1506 4.94718 12.1975 4.91577 12.2913Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    </span>
+  </button>
+
+    </div>
+    <!-- ADJUST REQUEST ASK FOR MORE TIME COMPONENT END-->
+
+
+
+    <!-- ADJUST REQUEST ASK TO RESCHEDULE COMPONENT START-->
+    <div class="absolute flex flex-col gap-[1.5rem] top-[5rem] left-[57rem] z-[10] bg-gray-100 shadow-custom2 p-[1rem] rounded-[0.625rem]">
+    <section class="flex items-center justify-between gap-[0.5rem]">
+
+    <span class="flex itmes-center gap-[0.5rem]">
+    <span class="w-[1rem] h-[1rem]">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M14.614 8.84349C14.6489 8.56729 14.6668 8.28582 14.6668 8.00016C14.6668 4.31826 11.6821 1.3335 8.00016 1.3335C4.31826 1.3335 1.3335 4.31826 1.3335 8.00016C1.3335 11.6821 4.31826 14.6668 8.00016 14.6668C8.29043 14.6668 8.57637 14.6483 8.85685 14.6123M8.00016 4.00016V8.00016L10.4924 9.24629M12.6668 14.6668V10.6668M10.6668 12.6668H14.6668" stroke="#344054" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    </span>
+    <p class="text-[0.75rem] text-gray-700 font-semibold leading-[1.125rem]">Ask to reschedule</p>
+    </span>
+
+    <span class="w-[0.625rem] h-[0.625rem]">
+    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M11 1L1 11M1 1L11 11" stroke="#667085" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    </span>
+    </section>
+
+    <section class="flex flex-col justify-start gap-[0.5rem] py-[0.5rem] w-[20.0625rem]">
+    <p class="text-[0.875rem] text-gray-500 font-medium leading-[1.25rem]">New Event date</p>
+    <span class="flex items-center px-[0.75rem] py-[0.5rem] gap-[0.5rem] bg-white rounded-[0.125rem] border-b border-gray-300">
+    <span class="flex items-center justify-center w-[1.25rem] h-[1.25rem]">
+    <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M16.5 8.33317H1.5M12.3333 1.6665V4.99984M5.66667 1.6665V4.99984M5.5 18.3332H12.5C13.9001 18.3332 14.6002 18.3332 15.135 18.0607C15.6054 17.821 15.9878 17.4386 16.2275 16.9681C16.5 16.4334 16.5 15.7333 16.5 14.3332V7.33317C16.5 5.93304 16.5 5.23297 16.2275 4.69819C15.9878 4.22779 15.6054 3.84534 15.135 3.60565C14.6002 3.33317 13.9001 3.33317 12.5 3.33317H5.5C4.09987 3.33317 3.3998 3.33317 2.86502 3.60565C2.39462 3.84534 2.01217 4.22779 1.77248 4.69819C1.5 5.23297 1.5 5.93304 1.5 7.33317V14.3332C1.5 15.7333 1.5 16.4334 1.77248 16.9681C2.01217 17.4386 2.39462 17.821 2.86502 18.0607C3.3998 18.3332 4.09987 18.3332 5.5 18.3332Z" stroke="#667085" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    </span>
+    <input type="text" value="Tue, August 24, 2025" class="flex text-[1rem] text=text-gray-900 font-regular leading-[1.5rem]"/>
+    </span>
+
+    <p class="text-[0.875rem] text-gray-600 font-regular leading-[1.25rem]">Original event date April 24, 2025</p>
+    </section>
+
+
+    <section class="flex flex-col justify-start gap-[0.5rem] py-[0.5rem] w-[20.0625rem]">
+    <p class="text-[0.875rem] text-gray-500 font-medium leading-[1.25rem]">New start time</p>
+
+    <span class="flex items-center gap-[0.5rem]">
+    <span class="flex bg-white rounded-[0.125rem] border-b border-gray-300">
+    <input type="text" value="9:30pm" class="flex py-[0.5rem] pl-[0.75rem] w-[6.78125rem]"/>
+    <span class="flex items-center justify-center w-[3rem] h-[2.5rem] bg-white">
+    <svg width="11" height="16" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1.3335 10.5002L5.50016 14.6668L9.66683 10.5002M1.3335 5.50016L5.50016 1.3335L9.66683 5.50016" stroke="#344054" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    </span>
+    </span>
+    <p class="text-[1rem] text-black font-medium leading-[1.25rem]">-10:30pm</p>
+    </span>
+
+    <p class="text-[0.875rem] text-gray-600 font-regular leading-[1.25rem]">Original start time 9:15pm</p>
+    </section>
+
+    <button class="flex items-center justify-center gap-[0.5rem] p-[0.5rem] bg-background-green ">
+    <p class="text-[1rem] text-gray-950 font-medium leading-[1.5rem]">Send request to @jennyhoney</p>
+    <span class="w-[1.5rem] h-[1.5rem]">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2162 11.9998H5.00043M4.91577 12.2913L2.58085 19.266C2.39742 19.8139 2.3057 20.0879 2.37152 20.2566C2.42868 20.4031 2.55144 20.5142 2.70292 20.5565C2.87736 20.6052 3.14083 20.4866 3.66776 20.2495L20.3792 12.7293C20.8936 12.4979 21.1507 12.3822 21.2302 12.2214C21.2993 12.0817 21.2993 11.9179 21.2302 11.7782C21.1507 11.6174 20.8936 11.5017 20.3792 11.2703L3.66193 3.74751C3.13659 3.51111 2.87392 3.39291 2.69966 3.4414C2.54832 3.48351 2.42556 3.59429 2.36821 3.74054C2.30216 3.90893 2.3929 4.18231 2.57437 4.72906L4.91642 11.7853C4.94759 11.8792 4.96317 11.9262 4.96933 11.9742C4.97479 12.0168 4.97473 12.0599 4.96916 12.1025C4.96289 12.1506 4.94718 12.1975 4.91577 12.2913Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    </span>
+  </button>
+
+    </div>
+    <!-- ADJUST REQUEST ASK TO RESCHEDULE COMPONENT END-->
+
+
+    <!-- ADJUST REQUEST CANCEL CALL COMPONENT START-->
+    <div class="absolute flex flex-col w-[22.0625rem] gap-[0.5rem] p-[1rem] top-[28rem] left-[40%] z-[10] bg-gray-100 shadow-custom2 rounded-[0.625rem]">
+    <section class="flex items-center justify-between gap-[0.5rem]">
+
+    <span class="flex items-center gap-[0.5rem] ">
+    <span class="w-[1rem] h-[1rem]">
+    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M13.9999 1L9.9999 5M9.9999 1L13.9999 5M6.81792 8.24205C6.01687 7.44099 5.38435 6.53523 4.92035 5.56882C4.88044 5.48569 4.86048 5.44413 4.84515 5.39154C4.79067 5.20463 4.8298 4.97513 4.94314 4.81684C4.97504 4.7723 5.01314 4.7342 5.08935 4.65799C5.32242 4.42492 5.43895 4.30838 5.51514 4.1912C5.80247 3.74927 5.80247 3.17955 5.51515 2.73762C5.43895 2.62044 5.32242 2.5039 5.08935 2.27083L4.95943 2.14092C4.60514 1.78662 4.42799 1.60947 4.23774 1.51324C3.85937 1.32186 3.41252 1.32186 3.03415 1.51324C2.84389 1.60947 2.66675 1.78662 2.31245 2.14092L2.20736 2.24601C1.85428 2.59909 1.67774 2.77563 1.54291 3.01565C1.39329 3.28199 1.28572 3.69565 1.28663 4.00113C1.28745 4.27643 1.34085 4.46458 1.44765 4.84087C2.02163 6.86314 3.10462 8.77138 4.6966 10.3634C6.28859 11.9554 8.19683 13.0383 10.2191 13.6123C10.5954 13.7191 10.7835 13.7725 11.0588 13.7733C11.3643 13.7743 11.778 13.6667 12.0443 13.5171C12.2843 13.3822 12.4609 13.2057 12.814 12.8526L12.9191 12.7475C13.2733 12.3932 13.4505 12.2161 13.5467 12.0258C13.7381 11.6474 13.7381 11.2006 13.5467 10.8222C13.4505 10.632 13.2733 10.4548 12.9191 10.1005L12.7891 9.97062C12.5561 9.73755 12.4395 9.62101 12.3223 9.54482C11.8804 9.25749 11.3107 9.2575 10.8688 9.54482C10.7516 9.62102 10.6351 9.73755 10.402 9.97062C10.3258 10.0468 10.2877 10.0849 10.2431 10.1168C10.0848 10.2302 9.85534 10.2693 9.66843 10.2148C9.61584 10.1995 9.57428 10.1795 9.49115 10.1396C8.52474 9.67562 7.61898 9.0431 6.81792 8.24205Z" stroke="#344054" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    </span>
+    <p class="text-[0.875rem] text-gray-700 font-semibold leading-[1.25rem]">Cancel Call</p>
+    </span>
+
+    <span class="w-[0.625rem] h-[0.625rem]">
+    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M11 1L1 11M1 1L11 11" stroke="#667085" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    </span>
+    </section>
+
+    <section class="flex flex-col items-start justify-start]">
+    <p class="text-[1rem] text-gray-700 font-regular leading-[1.5rem]">Are you sure you want to cancel this event?Booking Fee will still be deducted from your wallet.</p>
+    </section>
+
+    <section class="flex items-center gap-[0.5rem]">
+    <button class="flex justify-center w-full py-[0.5rem] border border-secondDarkOrange">
+    <p class="text-[1rem] text-secondDarkOrange font-medium leading-[1.5rem]">Back</p>
+    </button>
+    <button class="flex justify-center w-full py-[0.5rem] border border-secondDarkOrange bg-secondDarkOrange">
+    <p class="text-[1rem] text-white font-medium leading-[1.5rem]">Cancel Call</p>
+    </button>
+    </section>
+
+    </div>
+    <!-- ADJUST REQUEST CANCEL CALL COMPONENT END-->
+
+
+        <!-- CANCELLED NOTIF WRAPPER START----->
+        <div id="acceptNotice" class="absolute top-[30rem] left-[68%] z-[10] flex flex-col w-[21.4375rem] py-[0.5rem] gap-y-[0.7rem] h-[9.375rem]">
+        <div class="flex flex-col items-end gap-[0.25rem]">
+        <div class="relative w-full flex justify-center bg-white rounded-md gap-[0.375rem]">
+        <!-- left border -->
+        <div class="absolute w-[0.25rem] h-full left-0 bg-gray-400 rounded-l-md"></div>
+        <div class="relative w-[20.3125rem] py-[0.5rem] gap-[0.375rem]">
+
+          <button onclick="" class="absolute right-[0]">
+          <span class="flex justify-center items-center w-[1rem] h-[1rem]">
+          <svg width="4" height="12" viewBox="0 0 4 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.00004 6.6665C2.36823 6.6665 2.66671 6.36803 2.66671 5.99984C2.66671 5.63165 2.36823 5.33317 2.00004 5.33317C1.63185 5.33317 1.33337 5.63165 1.33337 5.99984C1.33337 6.36803 1.63185 6.6665 2.00004 6.6665Z" stroke="#98A2B3" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2.00004 1.99984C2.36823 1.99984 2.66671 1.70136 2.66671 1.33317C2.66671 0.964981 2.36823 0.666504 2.00004 0.666504C1.63185 0.666504 1.33337 0.964981 1.33337 1.33317C1.33337 1.70136 1.63185 1.99984 2.00004 1.99984Z" stroke="#98A2B3" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2.00004 11.3332C2.36823 11.3332 2.66671 11.0347 2.66671 10.6665C2.66671 10.2983 2.36823 9.99984 2.00004 9.99984C1.63185 9.99984 1.33337 10.2983 1.33337 10.6665C1.33337 11.0347 1.63185 11.3332 2.00004 11.3332Z" stroke="#98A2B3" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          </span>
+          </button>
+
+         <span><p class="text-[1rem] text-gray-700 font-semibold leading-[1.5rem]">Call me and i will sing with you</p></span>
+         <p class="text-[0.875rem] text-gray-700 font-500 font-medium leading-[1.25rem] py-[0.5rem]">April 24, 2025 2:15pm-9:30pm</p>
+
+            <div class=" flex items-center justify-between">
+            <span class="flex items-center gap-[0.25rem]">
+
+            <span class="w-[1rem] h-[1rem]">
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.9999 1L9.9999 5M9.9999 1L13.9999 5M6.81792 8.24205C6.01687 7.44099 5.38435 6.53523 4.92035 5.56882C4.88044 5.48569 4.86048 5.44413 4.84515 5.39154C4.79067 5.20463 4.8298 4.97513 4.94314 4.81684C4.97504 4.7723 5.01314 4.7342 5.08935 4.65799C5.32242 4.42492 5.43895 4.30838 5.51514 4.1912C5.80247 3.74927 5.80247 3.17955 5.51515 2.73762C5.43895 2.62044 5.32242 2.5039 5.08935 2.27083L4.95943 2.14092C4.60514 1.78662 4.42799 1.60947 4.23774 1.51324C3.85937 1.32186 3.41252 1.32186 3.03415 1.51324C2.84389 1.60947 2.66675 1.78662 2.31245 2.14092L2.20736 2.24601C1.85428 2.59909 1.67774 2.77563 1.54291 3.01565C1.39329 3.28199 1.28572 3.69565 1.28663 4.00113C1.28745 4.27643 1.34085 4.46458 1.44765 4.84087C2.02163 6.86314 3.10462 8.77138 4.6966 10.3634C6.28859 11.9554 8.19683 13.0383 10.2191 13.6123C10.5954 13.7191 10.7835 13.7725 11.0588 13.7733C11.3643 13.7743 11.778 13.6667 12.0443 13.5171C12.2843 13.3822 12.4609 13.2057 12.814 12.8526L12.9191 12.7475C13.2733 12.3932 13.4505 12.2161 13.5467 12.0258C13.7381 11.6474 13.7381 11.2006 13.5467 10.8222C13.4505 10.632 13.2733 10.4548 12.9191 10.1005L12.7891 9.97062C12.5561 9.73755 12.4395 9.62101 12.3223 9.54482C11.8804 9.25749 11.3107 9.2575 10.8688 9.54482C10.7516 9.62102 10.6351 9.73755 10.402 9.97062C10.3258 10.0468 10.2877 10.0849 10.2431 10.1168C10.0848 10.2302 9.85534 10.2693 9.66843 10.2148C9.61584 10.1995 9.57428 10.1795 9.49115 10.1396C8.52474 9.67562 7.61898 9.0431 6.81792 8.24205Z" stroke="#FF4405" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            </span>
+
+            <p class="text-[0.875rem] text-orangeDark font-semibold leading-[1.25rem]">Canceled</p>
+
+            </span>
+
+            <!-- View details -->
+            <div class="flex items-center h-[1.625rem] gap-[0.25rem] px-[0.5rem] py-[0.1875rem]">
+
+              <button onclick="" class="text-[0.75rem] leading-[1.125rem] text-violetCream font-medium">
+              View details
+              </button>
+              <span class="flex items-center justify-center w-[1rem] h-[1rem]"> 
+              <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.666626 7.33317L7.33329 0.666504M7.33329 0.666504H0.666626M7.33329 0.666504V7.33317" stroke="#4640FF" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>    
+              </span>
+
+            </div>
+            </div>
+         </div>
+         </div>
+
+        </div>
+        </div>
+        <!-- CANCELED NOTICE WRAPPER END -->
+
+    <!-- POP-UP COMPONENTS END HERE -->
+
+
+
+
+
+
+
+    <!-- MODEL USER SECTION START HERE!-->
+
+    <div class="absolute items-end top-[48rem] left-[3rem] z-[5] w-[23.4375rem] h-[38.9375rem] rounded-[0.5rem] shadow-3xl">
+    <!-- convo bubble overflow START -->
+    <div class="relative w-[23.4375rem] h-[35.4375rem] backdrop-blur-md rounded-t-[0.25rem] ">
+
+    <!-- header section start -->
+    <div class="absolute z-[10] flex items-center justify-between w-full h-[3.5rem] p-[0.375rem] gap-[0.375] backdrop-blur-xs rounded-t-[0.25rem] bg-white/30">
+        <div class="flex w-[10.1875rem] h-[2.5rem] gap-[0.25rem]">
+        <!-- avatar -->
+        <div class="w-[2.5rem] h-[2.25rem] bg-[url(./img/GrapesAvatar.png)] bg-cover bg-center mask-mango"></div>
+        <!-- User Name and status wrapper -->
+        <div class=" gap-y-[0.125rem] ">
+        <!-- user name -->
+        <div class="flex items-center gap-[0.125rem]">    
+        <h2 class="text-[0.875rem] font-semibold">Grapes</h2>
+        <svg width="12" height="4" viewBox="0 0 12 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.99996 2.66671C6.36815 2.66671 6.66663 2.36823 6.66663 2.00004C6.66663 1.63185 6.36815 1.33337 5.99996 1.33337C5.63177 1.33337 5.33329 1.63185 5.33329 2.00004C5.33329 2.36823 5.63177 2.66671 5.99996 2.66671Z" stroke="#667085" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M10.6666 2.66671C11.0348 2.66671 11.3333 2.36823 11.3333 2.00004C11.3333 1.63185 11.0348 1.33337 10.6666 1.33337C10.2984 1.33337 9.99996 1.63185 9.99996 2.00004C9.99996 2.36823 10.2984 2.66671 10.6666 2.66671Z" stroke="#667085" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M1.33329 2.66671C1.70148 2.66671 1.99996 2.36823 1.99996 2.00004C1.99996 1.63185 1.70148 1.33337 1.33329 1.33337C0.965103 1.33337 0.666626 1.63185 0.666626 2.00004C0.666626 2.36823 0.965103 2.66671 1.33329 2.66671Z" stroke="#667085" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        </div>
+
+        <!-- status -->
+        <div class="flex items-center gap-[0.375rem]">
+        <div class="h-[0.375rem] w-[0.375rem] rounded-md bg-status"></div>
+        <p class="text-[0.75rem]"> 1 pending request </p>
+        </div>
+        </div>
+
+        </div>
+
+        <!-- heading controls -->
+        <div class=" flex items-center w-[6rem] h-1.5rem gap-[0.75rem]">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19 7L19 1M19 1H13M19 1L11 9M8 3H5.8C4.11984 3 3.27976 3 2.63803 3.32698C2.07354 3.6146 1.6146 4.07354 1.32698 4.63803C1 5.27976 1 6.11984 1 7.8V14.2C1 15.8802 1 16.7202 1.32698 17.362C1.6146 17.9265 2.07354 18.3854 2.63803 18.673C3.27976 19 4.11984 19 5.8 19H12.2C13.8802 19 14.7202 19 15.362 18.673C15.9265 18.3854 16.3854 17.9265 16.673 17.362C17 16.7202 17 15.8802 17 14.2V12" stroke="#344054" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 12H19" stroke="#344054" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13 1L1 13M1 1L13 13" stroke="#344054" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+         </div>
+    </div>
+     <!-- header section end -->
+
+        <!-- Chat Box START HERE ----->
+        <div 
+        id="chatBox" 
+        class="flex flex-col justify-end p-[1rem] h-[35.4375rem] gap-[1rem] overflow-y-auto hide-scrollbar">
+
+        <!-- Accepted notice wrapper START----->
+        <div id="acceptNotice" class="flex flex-col w-full py-[0.5rem] gap-y-[0.7rem] h-[9.375rem]">
+        <p class="text-[0.875rem] text-gray-700 font-400 text-center italic leading-[1.25rem]">Grape has just sent you a live call request:</p>
+        <div class="flex flex-col items-end gap-[0.25rem]">
+        <div class="relative w-full flex justify-center bg-white rounded-md gap-[0.375rem]">
+        <!-- left border -->
+        <div class="absolute w-[0.25rem] h-full left-0 bg-violetCream rounded-l-md"></div>
+        <div class="relative w-[20.3125rem] py-[0.5rem] gap-[0.375rem]">
+
+          <button onclick="" class="absolute right-[0]">
+          <span class="flex justify-center items-center w-[1rem] h-[1rem]">
+          <svg width="4" height="12" viewBox="0 0 4 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.00004 6.6665C2.36823 6.6665 2.66671 6.36803 2.66671 5.99984C2.66671 5.63165 2.36823 5.33317 2.00004 5.33317C1.63185 5.33317 1.33337 5.63165 1.33337 5.99984C1.33337 6.36803 1.63185 6.6665 2.00004 6.6665Z" stroke="#98A2B3" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2.00004 1.99984C2.36823 1.99984 2.66671 1.70136 2.66671 1.33317C2.66671 0.964981 2.36823 0.666504 2.00004 0.666504C1.63185 0.666504 1.33337 0.964981 1.33337 1.33317C1.33337 1.70136 1.63185 1.99984 2.00004 1.99984Z" stroke="#98A2B3" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2.00004 11.3332C2.36823 11.3332 2.66671 11.0347 2.66671 10.6665C2.66671 10.2983 2.36823 9.99984 2.00004 9.99984C1.63185 9.99984 1.33337 10.2983 1.33337 10.6665C1.33337 11.0347 1.63185 11.3332 2.00004 11.3332Z" stroke="#98A2B3" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          </span>
+          </button>
+
+         <span><p class="text-[1rem] text-gray-700 font-semibold leading-[1.5rem]">Call me and i will sing with you</p></span>
+         <p class="text-[0.875rem] text-gray-700 font-500 font-medium leading-[1.25rem] py-[0.5rem]">April 24, 2025 2:15pm-9:30pm</p>
+
+            <div class=" flex items-center justify-between">
+            <span class="flex items-center gap-[0.25rem]">
+
+            <span class="w-[1rem] h-[1rem]">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.6666 7.39065V8.00398C14.6658 9.44159 14.2003 10.8404 13.3395 11.9919C12.4787 13.1433 11.2688 13.9856 9.89016 14.3932C8.51154 14.8009 7.03809 14.7519 5.68957 14.2537C4.34104 13.7555 3.18969 12.8347 2.40723 11.6287C1.62476 10.4227 1.25311 8.99602 1.3477 7.56152C1.44229 6.12702 1.99806 4.76153 2.93211 3.66869C3.86615 2.57586 5.12844 1.81423 6.53071 1.49741C7.93298 1.18059 9.4001 1.32554 10.7133 1.91065M14.6666 2.66683L7.99992 9.34016L5.99992 7.34016" stroke="#15B79E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+
+            </span>
+            <p class="text-[0.875rem] text-teal-500 font-semibold">Accepted</p>
+            </span>
+
+            <!-- View details -->
+            <div class="flex items-center h-[1.625rem] gap-[0.25rem] px-[0.5rem] py-[0.1875rem]">
+
+              <button onclick="" class="text-[0.75rem] leading-[1.125rem] text-violetCream font-medium">
+              View details
+              </button>
+              <span class="flex items-center justify-center w-[1rem] h-[1rem]"> 
+              <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.666626 7.33317L7.33329 0.666504M7.33329 0.666504H0.666626M7.33329 0.666504V7.33317" stroke="#4640FF" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>    
+              </span>
+
+            </div>
+            </div>
+         </div>
+         </div>
+
+        </div>
+        </div>
+        <!-- Accepted Notif wrapper END -->
+        
+
+        <!-- GRAPES MSG START -->
+        <div class="flex flex-col w-max h-max gap-y-[0.25rem]">
+        <p class="bg-gray-600 text-white flex items-center w-max py-[0.375rem] px-[0.75rem] rounded-t-[0.9375rem] rounded-r-[0.9375rem]">Please accept my booking</p>
+        <p class="bg-gray-600 text-white flex items-center w-max py-[0.375rem] px-[0.75rem] rounded-t-[0.9375rem] rounded-r-[0.9375rem]">Its my birthday that day</p>
+        </div>
+
+
+        <!-- POStPONED WRAPPER START --->
+        <div id="" class="flex flex-col w-full py-[0.5rem] gap-y-[0.7rem]">
+        <p class="text-[0.875rem] text-gray-700 font-400 text-center italic leading-[1.25rem]">@Grape has asked to postponed the following event:</p>
+        <div class="flex flex-col items-end gap-[0.25rem]">
+        <div class="relative w-full  flex justify-center bg-white rounded-md gap-[0.375rem]">
+        <!-- left border -->
+        <div class="absolute w-[0.25rem] h-full left-0 bg-violetCream rounded-l-md"></div>
+        <div class="relative flex flex-col w-[20.3125rem] py-[0.5rem] gap-[0.75rem]">
+
+        <span class="flex flex-col gap-[0.5rem]">
+          <span class="h-[1.5rem]">
+          <button onclick="" class="absolute right-[0]">
+          <span class="flex justify-center items-center w-[1rem] h-[1rem]">
+          <svg width="4" height="12" viewBox="0 0 4 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.00004 6.6665C2.36823 6.6665 2.66671 6.36803 2.66671 5.99984C2.66671 5.63165 2.36823 5.33317 2.00004 5.33317C1.63185 5.33317 1.33337 5.63165 1.33337 5.99984C1.33337 6.36803 1.63185 6.6665 2.00004 6.6665Z" stroke="#98A2B3" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2.00004 1.99984C2.36823 1.99984 2.66671 1.70136 2.66671 1.33317C2.66671 0.964981 2.36823 0.666504 2.00004 0.666504C1.63185 0.666504 1.33337 0.964981 1.33337 1.33317C1.33337 1.70136 1.63185 1.99984 2.00004 1.99984Z" stroke="#98A2B3" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2.00004 11.3332C2.36823 11.3332 2.66671 11.0347 2.66671 10.6665C2.66671 10.2983 2.36823 9.99984 2.00004 9.99984C1.63185 9.99984 1.33337 10.2983 1.33337 10.6665C1.33337 11.0347 1.63185 11.3332 2.00004 11.3332Z" stroke="#98A2B3" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          </span>
+          </button>
+
+         <p class="text-[1rem] text-gray-700 font-semibold leading-[1.5rem]">Call me and i will sing with you</p>
+         </span>
+
+         <span class="flex flex-col gap-[0.25rem]">
+         <p class="text-[0.875rem] text-gray-700 font-500 font-medium h-[1.25rem] line-through">April 24, 2025 2:15pm-9:30pm</p>
+         <p class="text-[0.875rem] font-semibold leading-[1.25rem] text-violetCream">April 24, 2025 2:45pm-10:00pm</p>
+         </span>
+         
+
+
+          <span class="flex flex-col gap-[0.5rem]">
+          <button class="flex">
+          <p class="text-[0.75rem] text-lightViolet font-medium leading-[1.125rem]">View detail</p>
+          <span class="w-[1rem] h-[1rem]">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4.6665 8.66667L7.99984 12L11.3332 8.66667M4.6665 4L7.99984 7.33333L11.3332 4" stroke="#5549FF" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          </span>
+          </button>
+          </span>
+        </span>
+
+         <!-- button and status -->
+        <div class=" flex items-center h-[1.625rem] gap-[0.25rem]">
+            <button class="text-[0.875rem] text-teal-500 font-semibold leading-[1.25rem] w-full py-[0.1875rem] border border-teal-500 rounded-[0.25rem]">
+              Accept New Time
+            </button>
+            <button onclick="" class="text-[0.875rem] text-orangeButton font-semibold leading-[1.25rem] w-full py-[0.1875rem] border border-orangeButton rounded-[0.25rem]">
+              Reject
+            </button>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <!-- avatar andtime  -->
+        <div class="flex items-center justify-between w-[4.9375rem]">
+            <div class="w-[1.5rem] h-[1.5rem] bg-[url(./img/GrapesAvatar.png)] bg-cover bg-center mask-mango"></div>
+            <p class="text-gray-500 text-[0.75rem]">2:30pm</p>
+        </div>
+        
+        </div>
+        <!-- POSTPONED WRAPPER END --->
+
+
+
+
+        <!-- bottom spacer -->
+        <!-- <div class="w-full bg-background-green h-[1rem]"></div> -->
+        </div>
+        <!---- Chat box END ---->
+
+        </div>
+        <!-- convo bubble overflow END -->
+
+
+        
+        <!-- INPUT FIELD SECTION -->
+        <div class=" flex items-center justify-center h-[3.5rem] gap-[0.625rem] bg-white rounded-b-[0.5rem]">
+
+        <!-- avatar -->
+        <div class="h-[1.5rem] w-[1.5rem] bg-[url(./img/artistAvatar.png)] bg-cover bg-center mask-mango">
+        </div>
+
+        <input class="outline-none w-[16.0625rem] text-gray-500 text-[1rem]" type="text" placeholder="Write a reply...">
+
+        <!-- emoji -->
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7 13C7 13 8.5 15 11 15C13.5 15 15 13 15 13M14 8H14.01M8 8H8.01M21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11ZM14.5 8C14.5 8.27614 14.2761 8.5 14 8.5C13.7239 8.5 13.5 8.27614 13.5 8C13.5 7.72386 13.7239 7.5 14 7.5C14.2761 7.5 14.5 7.72386 14.5 8ZM8.5 8C8.5 8.27614 8.27614 8.5 8 8.5C7.72386 8.5 7.5 8.27614 7.5 8C7.5 7.72386 7.72386 7.5 8 7.5C8.27614 7.5 8.5 7.72386 8.5 8Z" stroke="#0C111D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+        <!-- attachment -->
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 6V14M6 10H14M5.8 19H14.2C15.8802 19 16.7202 19 17.362 18.673C17.9265 18.3854 18.3854 17.9265 18.673 17.362C19 16.7202 19 15.8802 19 14.2V5.8C19 4.11984 19 3.27976 18.673 2.63803C18.3854 2.07354 17.9265 1.6146 17.362 1.32698C16.7202 1 15.8802 1 14.2 1H5.8C4.11984 1 3.27976 1 2.63803 1.32698C2.07354 1.6146 1.6146 2.07354 1.32698 2.63803C1 3.27976 1 4.11984 1 5.8V14.2C1 15.8802 1 16.7202 1.32698 17.362C1.6146 17.9265 2.07354 18.3854 2.63803 18.673C3.27976 19 4.11984 19 5.8 19Z" stroke="#0C111D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+
+    </div>
+    </div>
+    <!-- MODEL MESSAGE WRAPPER END -->
+
+  </body>
+</html>

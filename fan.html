@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nav Sidebar</title>
+
+    <!-- poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Official Script -->
+    <script src="./src/script.js"></script>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Tailwind CSS -->
+    <script src="./src/tailwindCustom.js"></script>
+    <!-- STYLE -->
+    <!-- <link rel="stylesheet" href="./src/utllities.css"> -->
+     <style>
+      @layer utilities {
+      .mask-radial-at-center {
+      -webkit-mask-image: radial-gradient(circle at center, white 70%, transparent 71%);
+      mask-image: radial-gradient(circle at center, white 70%, transparent 71%);
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-size: 100% 100%;
+      mask-size: 100% 100%;
+      }
+      .mask-mango {
+      -webkit-mask-image: url("./img/Mango.png");
+      mask-image: url("./img/Mango.png");
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-size: 100% 100%;
+      mask-size: 100% 100%;
+      -webkit-mask-position: center;
+      mask-position: center;
+      }
+
+      .hide-scrollbar::-webkit-scrollbar {
+      display: none; 
+      }
+      .hide-scrollbar {
+      -ms-overflow-style: none;  
+      scrollbar-width: none;   
+      } 
+      }
+     </style>
+  </head>
+
+
+
+  <body class="flex font-sans bg-neutral-200">
+
+  <!-- FAN SECTION START HERE!-->
+  <div class="absolute bottom-[0.5rem] left-[3rem] z-[5] w-[23.4375rem] h-[38.9375rem] rounded-[0.5rem] shadow-3xl">
+    <!-- convo bubble overflow START -->
+    <div class="relative w-[23.4375rem] h-[35.4375rem] backdrop-blur-md rounded-t-[0.25rem]">
+
+    <!-- header section start -->
+    <div class="absolute z-[10] flex items-center justify-between w-full h-[3.5rem] p-[0.375rem] gap-[0.375] backdrop-blur-xs rounded-t-[0.25rem] bg-white/30">
+        <div class="flex w-[10.1875rem] h-[2.5rem] gap-[0.25rem]">
+        <!-- avatar -->
+        <div class="w-[2.5rem] h-[2.25rem] bg-[url(./img/artistAvatar.png)] bg-cover bg-center mask-mango"></div>
+        <!-- User Name and status wrapper -->
+        <div class=" gap-y-[0.125rem] ">
+        <!-- user name -->
+        <div class="flex items-center gap-[0.125rem]">    
+        <h2 class="text-[0.875rem] font-semibold">Jenny Honey~</h2>
+        <svg width="12" height="4" viewBox="0 0 12 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.99996 2.66671C6.36815 2.66671 6.66663 2.36823 6.66663 2.00004C6.66663 1.63185 6.36815 1.33337 5.99996 1.33337C5.63177 1.33337 5.33329 1.63185 5.33329 2.00004C5.33329 2.36823 5.63177 2.66671 5.99996 2.66671Z" stroke="#667085" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M10.6666 2.66671C11.0348 2.66671 11.3333 2.36823 11.3333 2.00004C11.3333 1.63185 11.0348 1.33337 10.6666 1.33337C10.2984 1.33337 9.99996 1.63185 9.99996 2.00004C9.99996 2.36823 10.2984 2.66671 10.6666 2.66671Z" stroke="#667085" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M1.33329 2.66671C1.70148 2.66671 1.99996 2.36823 1.99996 2.00004C1.99996 1.63185 1.70148 1.33337 1.33329 1.33337C0.965103 1.33337 0.666626 1.63185 0.666626 2.00004C0.666626 2.36823 0.965103 2.66671 1.33329 2.66671Z" stroke="#667085" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        </div>
+
+        <!-- status -->
+        <div class="flex items-center gap-[0.375rem]">
+        <div class="h-[0.375rem] w-[0.375rem] rounded-md bg-status"></div>
+        <p class="text-[0.75rem]"> 1 pending request </p>
+        </div>
+        </div>
+
+        </div>
+
+        <!-- heading controls -->
+        <div class=" flex items-center w-[6rem] h-1.5rem gap-[0.75rem]">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19 7L19 1M19 1H13M19 1L11 9M8 3H5.8C4.11984 3 3.27976 3 2.63803 3.32698C2.07354 3.6146 1.6146 4.07354 1.32698 4.63803C1 5.27976 1 6.11984 1 7.8V14.2C1 15.8802 1 16.7202 1.32698 17.362C1.6146 17.9265 2.07354 18.3854 2.63803 18.673C3.27976 19 4.11984 19 5.8 19H12.2C13.8802 19 14.7202 19 15.362 18.673C15.9265 18.3854 16.3854 17.9265 16.673 17.362C17 16.7202 17 15.8802 17 14.2V12" stroke="#344054" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 12H19" stroke="#344054" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13 1L1 13M1 1L13 13" stroke="#344054" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+         </div>
+    </div>
+     <!-- header section end -->
+
+        <!-- Chat Box START HERE ----->
+        <div 
+        id="chatBox" 
+        class="flex flex-col px-[1rem] h-[35.4375rem] gap-y-[1rem] overflow-y-auto hide-scrollbar">
+
+        <!-- Accepted notice wrapper START-->
+        <div id="acceptNotice" class="flex flex-col items-end w-full gap-y-[0.7rem] h-[16.625rem] border border-black">
+
+        <p class="text-[0.875rem] text-gray-700 font-400 text-center w-full italic leading-[1.25rem]">@grape has just sent you a live call request</p>
+
+        <div class="flex flex-col items-end h-[8.875rem] w-full gap-[0.25rem]">
+        <div class="relative w-full flex justify-center bg-white rounded-md gap-[0.375rem]">
+        <!-- left border -->
+        <div class="absolute w-[0.25rem] h-full left-0 bg-violetCream rounded-l-md"></div>
+        <div class="relative w-[20.3125rem] py-[0.5rem] gap-[0.375rem]">
+
+          <button onclick="" class="absolute right-[0]">
+          <span class="flex justify-center items-center w-[1rem] h-[1rem]">
+          <svg width="4" height="12" viewBox="0 0 4 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.00004 6.6665C2.36823 6.6665 2.66671 6.36803 2.66671 5.99984C2.66671 5.63165 2.36823 5.33317 2.00004 5.33317C1.63185 5.33317 1.33337 5.63165 1.33337 5.99984C1.33337 6.36803 1.63185 6.6665 2.00004 6.6665Z" stroke="#98A2B3" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2.00004 1.99984C2.36823 1.99984 2.66671 1.70136 2.66671 1.33317C2.66671 0.964981 2.36823 0.666504 2.00004 0.666504C1.63185 0.666504 1.33337 0.964981 1.33337 1.33317C1.33337 1.70136 1.63185 1.99984 2.00004 1.99984Z" stroke="#98A2B3" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2.00004 11.3332C2.36823 11.3332 2.66671 11.0347 2.66671 10.6665C2.66671 10.2983 2.36823 9.99984 2.00004 9.99984C1.63185 9.99984 1.33337 10.2983 1.33337 10.6665C1.33337 11.0347 1.63185 11.3332 2.00004 11.3332Z" stroke="#98A2B3" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          </span>
+          </button>
+
+          <span><p class="text-[1rem] text-gray-700 font-semibold leading-[1.5rem]">Call me and i will sing with you</p></span>
+          <p class="text-[0.875rem] text-gray-700 font-500 font-medium leading-[1.25rem] py-[0.5rem]">April 24, 2025 2:15pm-9:30pm</p>
+
+          <!-- button and status START-->
+          <div class=" flex items-center h-[1.125rem] justify-between">
+            <span class="flex items-center gap-[0.25rem]">
+            <span class="w-[1rem] h-[1rem]">
+            <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.00016 12.3335H8.00016M2.40016 1.3335H9.60016C9.97353 1.3335 10.1602 1.3335 10.3028 1.40616C10.4283 1.47007 10.5303 1.57206 10.5942 1.6975C10.6668 1.84011 10.6668 2.02679 10.6668 2.40016V3.78317C10.6668 4.10929 10.6668 4.27235 10.63 4.4258C10.5973 4.56185 10.5435 4.69191 10.4703 4.81121C10.3879 4.94576 10.2726 5.06107 10.042 5.29167L8.08774 7.24592C7.82373 7.50993 7.69173 7.64193 7.64227 7.79415C7.59876 7.92805 7.59876 8.07228 7.64227 8.20617C7.69173 8.35839 7.82373 8.4904 8.08774 8.75441L10.042 10.7087C10.2726 10.9393 10.3879 11.0546 10.4703 11.1891C10.5435 11.3084 10.5973 11.4385 10.63 11.5745C10.6668 11.728 10.6668 11.891 10.6668 12.2172V13.6002C10.6668 13.9735 10.6668 14.1602 10.5942 14.3028C10.5303 14.4283 10.4283 14.5303 10.3028 14.5942C10.1602 14.6668 9.97353 14.6668 9.60016 14.6668H2.40016C2.02679 14.6668 1.84011 14.6668 1.6975 14.5942C1.57206 14.5303 1.47007 14.4283 1.40616 14.3028C1.3335 14.1602 1.3335 13.9735 1.3335 13.6002V12.2172C1.3335 11.891 1.3335 11.728 1.37034 11.5745C1.403 11.4385 1.45687 11.3084 1.52998 11.1891C1.61243 11.0546 1.72773 10.9393 1.95833 10.7087L3.91258 8.75441C4.17659 8.4904 4.3086 8.35839 4.35806 8.20617C4.40156 8.07228 4.40156 7.92805 4.35806 7.79415C4.3086 7.64193 4.17659 7.50992 3.91258 7.24592L1.95833 5.29167C1.72773 5.06107 1.61243 4.94576 1.52998 4.81121C1.45687 4.69191 1.403 4.56185 1.37034 4.4258C1.3335 4.27235 1.3335 4.10929 1.3335 3.78317V2.40016C1.3335 2.02679 1.3335 1.84011 1.40616 1.6975C1.47007 1.57206 1.57206 1.47007 1.6975 1.40616C1.84011 1.3335 2.02679 1.3335 2.40016 1.3335Z" stroke="#667085" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            </span>
+            <p class="text-[0.75rem] text-gray-500 font-regular leading-[1.125rem]">Waiting for response</p>
+            </span>
+
+            <!-- View in Calendar -->
+            <div class="flex items-center h-[1.625rem] gap-[0.25rem] px-[0.5rem] py-[0.1875rem]">
+              <button onclick="" class="text-[0.75rem] leading-[1.125rem] text-violetCream font-medium">
+              View Details
+              </button>
+              <span class="flex items-center justify-center w-[1rem] h-[1rem]"> 
+              <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.666626 7.33317L7.33329 0.666504M7.33329 0.666504H0.666626M7.33329 0.666504V7.33317" stroke="#4640FF" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>    
+              </span>
+            </div>
+        </div>
+        <!-- button and status END-->
+
+         </div>
+         </div>
+        </div>
+
+        <p class="py-[0.375rem] px-[0.75rem] text-[1rem] text-gray-700 text-end font-regular rounded-t-[0.9375rem] rounded-l-[0.9375rem] bg-white">Please accept my booking</p>
+        <p class="py-[0.375rem] px-[0.75rem] text-[1rem] text-gray-700 text-end font-regular rounded-t-[0.9375rem] rounded-l-[0.9375rem] bg-white">It's my birthday that day</p>
+
+        <!-- user avatar -->
+        <div class="flex items-center justify-between w-[4.9375rem] h-[1.5rem]">
+            <p class="text-[0.75rem] text-gray-500 leading-[1.125rem]">2:30pm</p>
+            <div class="bg-[url(./img/GrapesAvatar.png)] bg-cover bg-center w-[1.5rem] h-[1.5rem] mask-mango"></div>
+        </div>
+        </div>
+
+
+        <!-- Attachment wrapper END -->
+
+        <!-- Artits msg start -->
+        <div class="flex flex-col w-max h-max gap-y-[0.25rem]">
+        <p class="bg-gray-600 text-white flex items-center w-max py-[0.375rem] px-[0.75rem] rounded-t-[0.9375rem] rounded-r-[0.9375rem]">Let me check my schedule</p>
+        <!-- avatar andtime  -->
+        <div class="flex items-center justify-between w-[4.9375rem]">
+            <div class="w-[1.5rem] h-[1.5rem] bg-[url(./img/artistAvatar.png)] bg-cover bg-center mask-mango"></div>
+            <p class="text-gray-500 text-[0.75rem]">2:30pm</p>
+        </div>
+        </div>
+
+
+        <!-- bottom spacer -->
+        <!-- <div class="w-full bg-background-green h-[1rem]"></div> -->
+        </div>
+        <!---- Chat box END ---->
+
+        </div>
+        <!-- convo bubble overflow END -->
+
+
+        
+        <!-- INPUT FIELD SECTION -->
+        <div class=" flex items-center justify-center h-[3.5rem] gap-[0.625rem] bg-white rounded-b-[0.5rem]">
+
+        <!-- avatar -->
+        <div class="h-[1.5rem] w-[1.5rem] bg-[url(./img/GrapesAvatar.png)] bg-cover bg-center mask-mango">
+        </div>
+
+        <input class="outline-none w-[16.0625rem] text-gray-500 text-[1rem]" type="text" placeholder="Write a reply...">
+
+        <!-- emoji -->
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7 13C7 13 8.5 15 11 15C13.5 15 15 13 15 13M14 8H14.01M8 8H8.01M21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11ZM14.5 8C14.5 8.27614 14.2761 8.5 14 8.5C13.7239 8.5 13.5 8.27614 13.5 8C13.5 7.72386 13.7239 7.5 14 7.5C14.2761 7.5 14.5 7.72386 14.5 8ZM8.5 8C8.5 8.27614 8.27614 8.5 8 8.5C7.72386 8.5 7.5 8.27614 7.5 8C7.5 7.72386 7.72386 7.5 8 7.5C8.27614 7.5 8.5 7.72386 8.5 8Z" stroke="#0C111D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+        <!-- attachment -->
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 6V14M6 10H14M5.8 19H14.2C15.8802 19 16.7202 19 17.362 18.673C17.9265 18.3854 18.3854 17.9265 18.673 17.362C19 16.7202 19 15.8802 19 14.2V5.8C19 4.11984 19 3.27976 18.673 2.63803C18.3854 2.07354 17.9265 1.6146 17.362 1.32698C16.7202 1 15.8802 1 14.2 1H5.8C4.11984 1 3.27976 1 2.63803 1.32698C2.07354 1.6146 1.6146 2.07354 1.32698 2.63803C1 3.27976 1 4.11984 1 5.8V14.2C1 15.8802 1 16.7202 1.32698 17.362C1.6146 17.9265 2.07354 18.3854 2.63803 18.673C3.27976 19 4.11984 19 5.8 19Z" stroke="#0C111D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+
+    </div>
+    </div>
+    <!-- FAN MESSAGE WRAPPER END -->
+
+  </body>
+</html>
