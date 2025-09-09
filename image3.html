@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nav Sidebar</title>
+
+    <!-- poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Official Script -->
+    <script src="./src/script.js"></script>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Tailwind CSS -->
+    <script src="./src/tailwindCustom.js"></script>
+    <!-- STYLE -->
+    <!-- <link rel="stylesheet" href="./src/utllities.css"> -->
+     <style>
+      @layer utilities {
+      .mask-radial-at-center {
+      -webkit-mask-image: radial-gradient(circle at center, white 70%, transparent 71%);
+      mask-image: radial-gradient(circle at center, white 70%, transparent 71%);
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-size: 100% 100%;
+      mask-size: 100% 100%;
+      }
+      .mask-mango {
+      -webkit-mask-image: url("./img/Mango.png");
+      mask-image: url("./img/Mango.png");
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-size: 100% 100%;
+      mask-size: 100% 100%;
+      -webkit-mask-position: center;
+      mask-position: center;
+      }
+
+      .hide-scrollbar::-webkit-scrollbar {
+      display: none; 
+      }
+      .hide-scrollbar {
+      -ms-overflow-style: none;  
+      scrollbar-width: none;   
+      } 
+      }
+     </style>
+  </head>
+
+
+
+  <body class="flex font-sans bg-neutral-200">
+
+    <!-- NEW CHAT POPUP START -->
+    <div class="absolute flex flex-col items-center top-[5rem] left-[30rem] z-[10] rounded-[0.5rem] bg-gray-200 shadow-custom2 w-[42.1875rem] h-[69.25rem] ">
+
+    <section class="flex items-center justify-between gap-[0.635rem] px-[0.5rem] w-full h-[3.5rem]">
+    <p class="text-[0.875rem] text-gray-500 font-semibold leading-[1.25rem]">New Message</p>
+    <span class="flex items-center justify-center w-[1.25rem] h-[1.25rem]">
+    <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M11.5 1L1.5 11M1.5 1L11.5 11" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    </span>
+    </section>
+
+    <!-- SEARCH WRAPPER -->
+    <section class="flex items-center justify-between gap-[0.375rem] py-[0.5rem] px-[0.75rem] h-[3rem] w-full bg-gray-100 border-b-[1.5px] border-gray-950">
+    <span class="flex w-[39.1875rem]">
+    <p class="text-[1rem] text-gray-900 leading-[1.5rem] w-[1.81375rem]">TO</p>
+    <input type="text" class="text-[1rem] leading-[1.5rem] text-gray-500 bg-gray-100 w-full focus:outline-none" placeholder="Search fans and models by username...">
+    </span>
+
+    <span class="flex items-center justify-center w-[1rem] h-[1rem]">
+    <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7.83341 1.66699L1.16675 8.33366M1.16675 1.66699L7.83341 8.33366" stroke="#98A2B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    </span>
+
+    </section>
+    <!-- body container -->
+    <div class="p-[1rem] w-full h-full">
+    <!-- body wrapper -->
+    <section class="flex flex-col gap-[1.5rem] w-full">
+    <!-- subscriber section start -->
+    <section class="flex flex-col gap-[0.5rem] w-full">
+    <h4 class="text-[0.875rem] text-gray-500 leading-[1.25rem] py-[0.25rem] font-semibold w-full">Subscribers</h4>
+    <!-- group wrapper -->
+    <div class="flex gap-[0.5rem]">
+
+    <!--FREE TIER group card/container start-->
+    <span class="flex flex-col items-center justify-center w-[9.671875rem] gap-[0.5rem]">
+    <!-- image & text-wrapper -->
+    <section class="flex flex-col items-center justify-center gap-[0.25rem] w-[9.171875rem]"> 
+
+    <!-- image container -->
+    <span class="flex -space-x-[2.8rem]">
+    <div class="z-[30] w-[4rem] h-[4rem] bg-[url(./img/broccoli2.png)] bg-cover bg-center mask-mango"></div>
+    <div class="z-[20] w-[4rem] h-[4rem] bg-[url(./img/peach.png)] bg-cover bg-center mask-mango"></div>
+    <div class="z-[10] w-[4rem] h-[4rem] bg-[url(./img/strawberry.png)] bg-cover bg-center mask-mango"></div>
+    </span>
+
+    <!-- text wrapper -->
+    <span class="flex flex-col items-center ga-[0.25rem]">
+    <span class="flex flex-col gap-[0.25rem]">
+    <h3 class="text-[1.125rem] text-gray-700 leading-[1.75rem] font-semibold">Free Tier</h3>
+    <p class="text-[0.75rem] text-gray-700 leading-[1.125rem] font-medium">88 subscriber</p>
+    </span>
+    <p class="text-[0.625rem] text-gray-500 text-center leading-[1.125rem] h-[2.25rem]">@peach, @pear and 86 more...</p>
+    </span>
+    </section>
+
+    <!-- button wrapper -->
+    <button class="flex items-center justify-center gap-[0.5rem] h-[1.625rem] px-[0.5rem] w-[9.171875rem] bg-brightPink">
+    <!-- message icon -->
+    <span class="w-1rem h-[1rem]">
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4.375 7H4.38167M7.375 7H7.38167M10.375 7H10.3817M7.375 13C10.6887 13 13.375 10.3137 13.375 7C13.375 3.68629 10.6887 1 7.375 1C4.06129 1 1.375 3.68629 1.375 7C1.375 7.7981 1.53082 8.5598 1.81371 9.25634C1.86785 9.38965 1.89492 9.45631 1.907 9.51019C1.91881 9.56289 1.92313 9.6019 1.92314 9.65591C1.92314 9.71113 1.91312 9.77128 1.89307 9.89157L1.49775 12.2635C1.45635 12.5119 1.43565 12.6361 1.47417 12.7259C1.50789 12.8045 1.57052 12.8671 1.64912 12.9008C1.73893 12.9393 1.86312 12.9186 2.11151 12.8772L4.48343 12.4819C4.60372 12.4619 4.66387 12.4519 4.71909 12.4519C4.7731 12.4519 4.81211 12.4562 4.86481 12.468C4.91869 12.4801 4.98535 12.5072 5.11866 12.5613C5.8152 12.8442 6.5769 13 7.375 13ZM4.70833 7C4.70833 7.1841 4.5591 7.33333 4.375 7.33333C4.19091 7.33333 4.04167 7.1841 4.04167 7C4.04167 6.81591 4.19091 6.66667 4.375 6.66667C4.5591 6.66667 4.70833 6.81591 4.70833 7ZM7.70833 7C7.70833 7.1841 7.5591 7.33333 7.375 7.33333C7.19091 7.33333 7.04167 7.1841 7.04167 7C7.04167 6.81591 7.19091 6.66667 7.375 6.66667C7.5591 6.66667 7.70833 6.81591 7.70833 7ZM10.7083 7C10.7083 7.1841 10.5591 7.33333 10.375 7.33333C10.1909 7.33333 10.0417 7.1841 10.0417 7C10.0417 6.81591 10.1909 6.66667 10.375 6.66667C10.5591 6.66667 10.7083 6.81591 10.7083 7Z" stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+
+    </span>
+    <!-- text -->
+    <p class="text-[0.75rem] font-semibold text-white">Message All</p>
+    </button>
+    </span>
+    <!-- group card/container end -->
+
+
+    <!-- BASIC TIER group card/container start-->
+    <span class="flex flex-col items-center justify-center w-[9.671875rem] gap-[0.5rem]">
+    <!-- image & text-wrapper -->
+    <section class="flex flex-col items-center justify-center gap-[0.25rem] w-[9.171875rem]"> 
+
+    <!-- image container -->
+    <span class="flex -space-x-[2.8rem]">
+    <div class="z-[30] w-[4rem] h-[4rem] bg-[url(./img/broccoli2.png)] bg-cover bg-center mask-mango"></div>
+    <div class="z-[20] w-[4rem] h-[4rem] bg-[url(./img/peach.png)] bg-cover bg-center mask-mango"></div>
+    <div class="z-[10] w-[4rem] h-[4rem] bg-[url(./img/strawberry.png)] bg-cover bg-center mask-mango"></div>
+    </span>
+
+    <!-- text wrapper -->
+    <span class="flex flex-col items-center ga-[0.25rem]">
+    <span class="flex flex-col gap-[0.25rem]">
+    <h3 class="text-[1.125rem] text-gray-700 leading-[1.75rem] font-semibold">basic Tier</h3>
+    <p class="text-[0.75rem] text-gray-700 leading-[1.125rem] font-medium">88 subscriber</p>
+    </span>
+    <p class="text-[0.625rem] text-gray-500 text-center leading-[1.125rem] h-[2.25rem]">@peach, @pear and 86 more...</p>
+    </span>
+    </section>
+
+    <!-- button wrapper -->
+    <button class="flex items-center justify-center gap-[0.5rem] h-[1.625rem] px-[0.5rem] w-[9.171875rem] bg-brightPink">
+    <!-- message icon -->
+    <span class="w-1rem h-[1rem]">
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4.375 7H4.38167M7.375 7H7.38167M10.375 7H10.3817M7.375 13C10.6887 13 13.375 10.3137 13.375 7C13.375 3.68629 10.6887 1 7.375 1C4.06129 1 1.375 3.68629 1.375 7C1.375 7.7981 1.53082 8.5598 1.81371 9.25634C1.86785 9.38965 1.89492 9.45631 1.907 9.51019C1.91881 9.56289 1.92313 9.6019 1.92314 9.65591C1.92314 9.71113 1.91312 9.77128 1.89307 9.89157L1.49775 12.2635C1.45635 12.5119 1.43565 12.6361 1.47417 12.7259C1.50789 12.8045 1.57052 12.8671 1.64912 12.9008C1.73893 12.9393 1.86312 12.9186 2.11151 12.8772L4.48343 12.4819C4.60372 12.4619 4.66387 12.4519 4.71909 12.4519C4.7731 12.4519 4.81211 12.4562 4.86481 12.468C4.91869 12.4801 4.98535 12.5072 5.11866 12.5613C5.8152 12.8442 6.5769 13 7.375 13ZM4.70833 7C4.70833 7.1841 4.5591 7.33333 4.375 7.33333C4.19091 7.33333 4.04167 7.1841 4.04167 7C4.04167 6.81591 4.19091 6.66667 4.375 6.66667C4.5591 6.66667 4.70833 6.81591 4.70833 7ZM7.70833 7C7.70833 7.1841 7.5591 7.33333 7.375 7.33333C7.19091 7.33333 7.04167 7.1841 7.04167 7C7.04167 6.81591 7.19091 6.66667 7.375 6.66667C7.5591 6.66667 7.70833 6.81591 7.70833 7ZM10.7083 7C10.7083 7.1841 10.5591 7.33333 10.375 7.33333C10.1909 7.33333 10.0417 7.1841 10.0417 7C10.0417 6.81591 10.1909 6.66667 10.375 6.66667C10.5591 6.66667 10.7083 6.81591 10.7083 7Z" stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+
+    </span>
+    <!-- text -->
+    <p class="text-[0.75rem] font-semibold text-white">Message All</p>
+    </button>
+    </span>
+    <!-- group card/container end -->
+
+
+    <!--VIP TIER group card/container start-->
+    <span class="flex flex-col items-center justify-center w-[9.671875rem] gap-[0.5rem]">
+    <!-- image & text-wrapper -->
+    <section class="flex flex-col items-center justify-center gap-[0.25rem] w-[9.171875rem]"> 
+
+    <!-- image container -->
+    <span class="flex -space-x-[2.8rem]">
+    <div class="z-[30] w-[4rem] h-[4rem] bg-[url(./img/broccoli2.png)] bg-cover bg-center mask-mango"></div>
+    <div class="z-[20] w-[4rem] h-[4rem] bg-[url(./img/peach.png)] bg-cover bg-center mask-mango"></div>
+    <div class="z-[10] w-[4rem] h-[4rem] bg-[url(./img/strawberry.png)] bg-cover bg-center mask-mango"></div>
+    </span>
+
+    <!-- text wrapper -->
+    <span class="flex flex-col items-center ga-[0.25rem]">
+    <span class="flex flex-col gap-[0.25rem]">
+    <h3 class="text-[1.125rem] text-gray-700 leading-[1.75rem] font-semibold">VIP Tier</h3>
+    <p class="text-[0.75rem] text-gray-700 leading-[1.125rem] font-medium">88 subscriber</p>
+    </span>
+    <p class="text-[0.625rem] text-gray-500 text-center leading-[1.125rem] h-[2.25rem]">@peach, @pear and 86 more...</p>
+    </span>
+    </section>
+
+    <!-- button wrapper -->
+    <button class="flex items-center justify-center gap-[0.5rem] h-[1.625rem] px-[0.5rem] w-[9.171875rem] bg-brightPink">
+    <!-- message icon -->
+    <span class="w-1rem h-[1rem]">
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4.375 7H4.38167M7.375 7H7.38167M10.375 7H10.3817M7.375 13C10.6887 13 13.375 10.3137 13.375 7C13.375 3.68629 10.6887 1 7.375 1C4.06129 1 1.375 3.68629 1.375 7C1.375 7.7981 1.53082 8.5598 1.81371 9.25634C1.86785 9.38965 1.89492 9.45631 1.907 9.51019C1.91881 9.56289 1.92313 9.6019 1.92314 9.65591C1.92314 9.71113 1.91312 9.77128 1.89307 9.89157L1.49775 12.2635C1.45635 12.5119 1.43565 12.6361 1.47417 12.7259C1.50789 12.8045 1.57052 12.8671 1.64912 12.9008C1.73893 12.9393 1.86312 12.9186 2.11151 12.8772L4.48343 12.4819C4.60372 12.4619 4.66387 12.4519 4.71909 12.4519C4.7731 12.4519 4.81211 12.4562 4.86481 12.468C4.91869 12.4801 4.98535 12.5072 5.11866 12.5613C5.8152 12.8442 6.5769 13 7.375 13ZM4.70833 7C4.70833 7.1841 4.5591 7.33333 4.375 7.33333C4.19091 7.33333 4.04167 7.1841 4.04167 7C4.04167 6.81591 4.19091 6.66667 4.375 6.66667C4.5591 6.66667 4.70833 6.81591 4.70833 7ZM7.70833 7C7.70833 7.1841 7.5591 7.33333 7.375 7.33333C7.19091 7.33333 7.04167 7.1841 7.04167 7C7.04167 6.81591 7.19091 6.66667 7.375 6.66667C7.5591 6.66667 7.70833 6.81591 7.70833 7ZM10.7083 7C10.7083 7.1841 10.5591 7.33333 10.375 7.33333C10.1909 7.33333 10.0417 7.1841 10.0417 7C10.0417 6.81591 10.1909 6.66667 10.375 6.66667C10.5591 6.66667 10.7083 6.81591 10.7083 7Z" stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+
+    </span>
+    <!-- text -->
+    <p class="text-[0.75rem] font-semibold text-white">Message All</p>
+    </button>
+    </span>
+    <!-- group card/container end -->
+
+
+    <!--VVIP TIER group card/container start-->
+    <span class="flex flex-col items-center justify-center w-[9.671875rem] gap-[0.5rem]">
+    <!-- image & text-wrapper -->
+    <section class="flex flex-col items-center justify-center gap-[0.25rem] w-[9.171875rem]"> 
+
+    <!-- image container -->
+    <span class="flex -space-x-[2.8rem]">
+    <div class="z-[30] w-[4rem] h-[4rem] bg-[url(./img/broccoli2.png)] bg-cover bg-center mask-mango"></div>
+    <div class="z-[20] w-[4rem] h-[4rem] bg-[url(./img/peach.png)] bg-cover bg-center mask-mango"></div>
+    <div class="z-[10] w-[4rem] h-[4rem] bg-[url(./img/strawberry.png)] bg-cover bg-center mask-mango"></div>
+    </span>
+
+    <!-- text wrapper -->
+    <span class="flex flex-col items-center ga-[0.25rem]">
+    <span class="flex flex-col gap-[0.25rem]">
+    <h3 class="text-[1.125rem] text-gray-700 leading-[1.75rem] font-semibold">VVIP Tier</h3>
+    <p class="text-[0.75rem] text-gray-700 leading-[1.125rem] font-medium">88 subscriber</p>
+    </span>
+    <p class="text-[0.625rem] text-gray-500 text-center leading-[1.125rem] h-[2.25rem]">@peach, @pear and 86 more...</p>
+    </span>
+    </section>
+
+    <!-- button wrapper -->
+    <button class="flex items-center justify-center gap-[0.5rem] h-[1.625rem] px-[0.5rem] w-[9.171875rem] bg-brightPink">
+    <!-- message icon -->
+    <span class="w-1rem h-[1rem]">
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4.375 7H4.38167M7.375 7H7.38167M10.375 7H10.3817M7.375 13C10.6887 13 13.375 10.3137 13.375 7C13.375 3.68629 10.6887 1 7.375 1C4.06129 1 1.375 3.68629 1.375 7C1.375 7.7981 1.53082 8.5598 1.81371 9.25634C1.86785 9.38965 1.89492 9.45631 1.907 9.51019C1.91881 9.56289 1.92313 9.6019 1.92314 9.65591C1.92314 9.71113 1.91312 9.77128 1.89307 9.89157L1.49775 12.2635C1.45635 12.5119 1.43565 12.6361 1.47417 12.7259C1.50789 12.8045 1.57052 12.8671 1.64912 12.9008C1.73893 12.9393 1.86312 12.9186 2.11151 12.8772L4.48343 12.4819C4.60372 12.4619 4.66387 12.4519 4.71909 12.4519C4.7731 12.4519 4.81211 12.4562 4.86481 12.468C4.91869 12.4801 4.98535 12.5072 5.11866 12.5613C5.8152 12.8442 6.5769 13 7.375 13ZM4.70833 7C4.70833 7.1841 4.5591 7.33333 4.375 7.33333C4.19091 7.33333 4.04167 7.1841 4.04167 7C4.04167 6.81591 4.19091 6.66667 4.375 6.66667C4.5591 6.66667 4.70833 6.81591 4.70833 7ZM7.70833 7C7.70833 7.1841 7.5591 7.33333 7.375 7.33333C7.19091 7.33333 7.04167 7.1841 7.04167 7C7.04167 6.81591 7.19091 6.66667 7.375 6.66667C7.5591 6.66667 7.70833 6.81591 7.70833 7ZM10.7083 7C10.7083 7.1841 10.5591 7.33333 10.375 7.33333C10.1909 7.33333 10.0417 7.1841 10.0417 7C10.0417 6.81591 10.1909 6.66667 10.375 6.66667C10.5591 6.66667 10.7083 6.81591 10.7083 7Z" stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+
+    </span>
+    <!-- text -->
+    <p class="text-[0.75rem] font-semibold text-white">Message All</p>
+    </button>
+    </span>
+    <!-- group card/container end -->
+
+
+
+    </div>
+    <!-- group wrapper end -->
+    </section>
+    <!-- subscriber section end -->
+
+
+    
+    <!-- Top follower wrapper start-->
+    <section class=" flex flex-col gap-[0.5rem] w-full">
+    <!-- heading wrapper -->
+    <div class="flex items-center justify-between h-[2.125rem]">
+    <h4 class="text-[0.875rem] text-gray-500 leading-[1.25rem] py-[0.25rem] font-semibold w-full">Top Followers</h4>
+
+    <!-- button wrapper -->
+    <button class="flex items-center justify-center gap-[0.5rem] h-[1.625rem] px-[0.5rem] bg-brightPink">
+    <!-- message icon -->
+    <span class="w-1rem h-[1rem]">
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4.375 7H4.38167M7.375 7H7.38167M10.375 7H10.3817M7.375 13C10.6887 13 13.375 10.3137 13.375 7C13.375 3.68629 10.6887 1 7.375 1C4.06129 1 1.375 3.68629 1.375 7C1.375 7.7981 1.53082 8.5598 1.81371 9.25634C1.86785 9.38965 1.89492 9.45631 1.907 9.51019C1.91881 9.56289 1.92313 9.6019 1.92314 9.65591C1.92314 9.71113 1.91312 9.77128 1.89307 9.89157L1.49775 12.2635C1.45635 12.5119 1.43565 12.6361 1.47417 12.7259C1.50789 12.8045 1.57052 12.8671 1.64912 12.9008C1.73893 12.9393 1.86312 12.9186 2.11151 12.8772L4.48343 12.4819C4.60372 12.4619 4.66387 12.4519 4.71909 12.4519C4.7731 12.4519 4.81211 12.4562 4.86481 12.468C4.91869 12.4801 4.98535 12.5072 5.11866 12.5613C5.8152 12.8442 6.5769 13 7.375 13ZM4.70833 7C4.70833 7.1841 4.5591 7.33333 4.375 7.33333C4.19091 7.33333 4.04167 7.1841 4.04167 7C4.04167 6.81591 4.19091 6.66667 4.375 6.66667C4.5591 6.66667 4.70833 6.81591 4.70833 7ZM7.70833 7C7.70833 7.1841 7.5591 7.33333 7.375 7.33333C7.19091 7.33333 7.04167 7.1841 7.04167 7C7.04167 6.81591 7.19091 6.66667 7.375 6.66667C7.5591 6.66667 7.70833 6.81591 7.70833 7ZM10.7083 7C10.7083 7.1841 10.5591 7.33333 10.375 7.33333C10.1909 7.33333 10.0417 7.1841 10.0417 7C10.0417 6.81591 10.1909 6.66667 10.375 6.66667C10.5591 6.66667 10.7083 6.81591 10.7083 7Z" stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+
+    </span>
+    <!-- text -->
+    <span class="flex items-center gap-[0.25rem] text-[white] w-[6.125rem]">
+    <p class="text-[0.75rem] font-semibold text-white">Message All</p> <span class="text-[0.65625rem] font-semibold">30</span>
+    </span>
+    </button>
+    </div>
+    <!-- heading wrapper end -->
+
+    <!-- follower start-->
+    <div class="flex items-center justify-between w-full px-[0.25rem]">
+    <!-- user info -->
+    <span class="flex items-center gap-[0.5rem]">
+    <div class="w-[4rem] h-[4rem] bg-[url(./img/peach.png)] bg-cover bg-center mask-mango"></div>
+    <span class="flex flex-col h-[2.875rem] gap-[0.25rem]">
+    <h3 class="text-[1rem] text-gray-950 leading-[1.5rem] font-medium">Peachman</h3>
+    <p class="text-[0.75rem] text-gray-500 leading-[1.125rem]">@sammisjelly187</p>
+    </span>
+    </span>
+
+    <!-- button -->
+    <button class="flex items-center justify-center w-[6.0625rem] h-[1.625rem] gap-[0.5rem] border border-brightPink">
+    <!-- message icon -->
+    <span class="w-[1rem] h-[1rem]">
+    <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4.5 7H4.50667M7.5 7H7.50667M10.5 7H10.5067M7.5 13C10.8137 13 13.5 10.3137 13.5 7C13.5 3.68629 10.8137 1 7.5 1C4.18629 1 1.5 3.68629 1.5 7C1.5 7.7981 1.65582 8.5598 1.93871 9.25634C1.99285 9.38965 2.01992 9.45631 2.032 9.51019C2.04381 9.56289 2.04813 9.6019 2.04814 9.65591C2.04814 9.71113 2.03812 9.77128 2.01807 9.89157L1.62275 12.2635C1.58135 12.5119 1.56065 12.6361 1.59917 12.7259C1.63289 12.8045 1.69552 12.8671 1.77412 12.9008C1.86393 12.9393 1.98812 12.9186 2.23651 12.8772L4.60843 12.4819C4.72872 12.4619 4.78887 12.4519 4.84409 12.4519C4.8981 12.4519 4.93711 12.4562 4.98981 12.468C5.04369 12.4801 5.11035 12.5072 5.24366 12.5613C5.9402 12.8442 6.7019 13 7.5 13ZM4.83333 7C4.83333 7.1841 4.6841 7.33333 4.5 7.33333C4.31591 7.33333 4.16667 7.1841 4.16667 7C4.16667 6.81591 4.31591 6.66667 4.5 6.66667C4.6841 6.66667 4.83333 6.81591 4.83333 7ZM7.83333 7C7.83333 7.1841 7.6841 7.33333 7.5 7.33333C7.31591 7.33333 7.16667 7.1841 7.16667 7C7.16667 6.81591 7.31591 6.66667 7.5 6.66667C7.6841 6.66667 7.83333 6.81591 7.83333 7ZM10.8333 7C10.8333 7.1841 10.6841 7.33333 10.5 7.33333C10.3159 7.33333 10.1667 7.1841 10.1667 7C10.1667 6.81591 10.3159 6.66667 10.5 6.66667C10.6841 6.66667 10.8333 6.81591 10.8333 7Z" stroke="#FF0066" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    </span>
+    <!-- text -->
+    <p class="text-[0.75rem] font-semibold text-brightPink">Message</p>
+    </button>  
+    </div>
+    <!-- follower end -->
+
+
+    <!-- follower start-->
+    <div class="flex items-center justify-between w-full px-[0.25rem]">
+    <!-- user info -->
+    <span class="flex items-center gap-[0.5rem]">
+    <div class="w-[4rem] h-[4rem] bg-[url(./img/strawberry.png)] bg-cover bg-center mask-mango"></div>
+    <span class="flex flex-col h-[2.875rem] gap-[0.25rem]">
+    <h3 class="text-[1rem] text-gray-950 leading-[1.5rem] font-medium">SirStrawberry</h3>
+    <p class="text-[0.75rem] text-gray-500 leading-[1.125rem]">@sammisjelly187</p>
+    </span>
+    </span>
+
+    <!-- button -->
+    <button class="flex items-center justify-center w-[6.0625rem] h-[1.625rem] gap-[0.5rem] border border-brightPink">
+    <!-- message icon -->
+    <span class="w-[1rem] h-[1rem]">
+    <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4.5 7H4.50667M7.5 7H7.50667M10.5 7H10.5067M7.5 13C10.8137 13 13.5 10.3137 13.5 7C13.5 3.68629 10.8137 1 7.5 1C4.18629 1 1.5 3.68629 1.5 7C1.5 7.7981 1.65582 8.5598 1.93871 9.25634C1.99285 9.38965 2.01992 9.45631 2.032 9.51019C2.04381 9.56289 2.04813 9.6019 2.04814 9.65591C2.04814 9.71113 2.03812 9.77128 2.01807 9.89157L1.62275 12.2635C1.58135 12.5119 1.56065 12.6361 1.59917 12.7259C1.63289 12.8045 1.69552 12.8671 1.77412 12.9008C1.86393 12.9393 1.98812 12.9186 2.23651 12.8772L4.60843 12.4819C4.72872 12.4619 4.78887 12.4519 4.84409 12.4519C4.8981 12.4519 4.93711 12.4562 4.98981 12.468C5.04369 12.4801 5.11035 12.5072 5.24366 12.5613C5.9402 12.8442 6.7019 13 7.5 13ZM4.83333 7C4.83333 7.1841 4.6841 7.33333 4.5 7.33333C4.31591 7.33333 4.16667 7.1841 4.16667 7C4.16667 6.81591 4.31591 6.66667 4.5 6.66667C4.6841 6.66667 4.83333 6.81591 4.83333 7ZM7.83333 7C7.83333 7.1841 7.6841 7.33333 7.5 7.33333C7.31591 7.33333 7.16667 7.1841 7.16667 7C7.16667 6.81591 7.31591 6.66667 7.5 6.66667C7.6841 6.66667 7.83333 6.81591 7.83333 7ZM10.8333 7C10.8333 7.1841 10.6841 7.33333 10.5 7.33333C10.3159 7.33333 10.1667 7.1841 10.1667 7C10.1667 6.81591 10.3159 6.66667 10.5 6.66667C10.6841 6.66667 10.8333 6.81591 10.8333 7Z" stroke="#FF0066" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    </span>
+    <!-- text -->
+    <p class="text-[0.75rem] font-semibold text-brightPink">Message</p>
+    </button>  
+    </div>
+    <!-- follower end -->
+
+
+    <!-- follower start-->
+    <div class="flex items-center justify-between w-full px-[0.25rem]">
+    <!-- user info -->
+    <span class="flex items-center gap-[0.5rem]">
+    <div class="w-[4rem] h-[4rem] bg-[url(./img/pineApple.png)] bg-cover bg-center mask-mango"></div>
+    <span class="flex flex-col h-[2.875rem] gap-[0.25rem]">
+    <h3 class="text-[1rem] text-gray-950 leading-[1.5rem] font-medium">Peachman</h3>
+    <p class="text-[0.75rem] text-gray-500 leading-[1.125rem]">@sammisjelly187</p>
+    </span>
+    </span>
+
+    <!-- button -->
+    <button class="flex items-center justify-center w-[6.0625rem] h-[1.625rem] gap-[0.5rem] border border-brightPink">
+    <!-- message icon -->
+    <span class="w-[1rem] h-[1rem]">
+    <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4.5 7H4.50667M7.5 7H7.50667M10.5 7H10.5067M7.5 13C10.8137 13 13.5 10.3137 13.5 7C13.5 3.68629 10.8137 1 7.5 1C4.18629 1 1.5 3.68629 1.5 7C1.5 7.7981 1.65582 8.5598 1.93871 9.25634C1.99285 9.38965 2.01992 9.45631 2.032 9.51019C2.04381 9.56289 2.04813 9.6019 2.04814 9.65591C2.04814 9.71113 2.03812 9.77128 2.01807 9.89157L1.62275 12.2635C1.58135 12.5119 1.56065 12.6361 1.59917 12.7259C1.63289 12.8045 1.69552 12.8671 1.77412 12.9008C1.86393 12.9393 1.98812 12.9186 2.23651 12.8772L4.60843 12.4819C4.72872 12.4619 4.78887 12.4519 4.84409 12.4519C4.8981 12.4519 4.93711 12.4562 4.98981 12.468C5.04369 12.4801 5.11035 12.5072 5.24366 12.5613C5.9402 12.8442 6.7019 13 7.5 13ZM4.83333 7C4.83333 7.1841 4.6841 7.33333 4.5 7.33333C4.31591 7.33333 4.16667 7.1841 4.16667 7C4.16667 6.81591 4.31591 6.66667 4.5 6.66667C4.6841 6.66667 4.83333 6.81591 4.83333 7ZM7.83333 7C7.83333 7.1841 7.6841 7.33333 7.5 7.33333C7.31591 7.33333 7.16667 7.1841 7.16667 7C7.16667 6.81591 7.31591 6.66667 7.5 6.66667C7.6841 6.66667 7.83333 6.81591 7.83333 7ZM10.8333 7C10.8333 7.1841 10.6841 7.33333 10.5 7.33333C10.3159 7.33333 10.1667 7.1841 10.1667 7C10.1667 6.81591 10.3159 6.66667 10.5 6.66667C10.6841 6.66667 10.8333 6.81591 10.8333 7Z" stroke="#FF0066" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    </span>
+    <!-- text -->
+    <p class="text-[0.75rem] font-semibold text-brightPink">Message</p>
+    </button>  
+    </div>
+    <!-- follower end -->
+
+
+    <!-- follower start-->
+    <div class="flex items-center justify-between w-full px-[0.25rem]">
+    <!-- user info -->
+    <span class="flex items-center gap-[0.5rem]">
+    <div class="w-[4rem] h-[4rem] bg-[url(./img/broccoli2.png)] bg-cover bg-center mask-mango"></div>
+    <span class="flex flex-col h-[2.875rem] gap-[0.25rem]">
+    <h3 class="text-[1rem] text-gray-950 leading-[1.5rem] font-medium">Bro Broc</h3>
+    <p class="text-[0.75rem] text-gray-500 leading-[1.125rem]">@sammisjelly187</p>
+    </span>
+    </span>
+
+    <!-- button -->
+    <button class="flex items-center justify-center w-[6.0625rem] h-[1.625rem] gap-[0.5rem] border border-brightPink">
+    <!-- message icon -->
+    <span class="w-[1rem] h-[1rem]">
+    <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4.5 7H4.50667M7.5 7H7.50667M10.5 7H10.5067M7.5 13C10.8137 13 13.5 10.3137 13.5 7C13.5 3.68629 10.8137 1 7.5 1C4.18629 1 1.5 3.68629 1.5 7C1.5 7.7981 1.65582 8.5598 1.93871 9.25634C1.99285 9.38965 2.01992 9.45631 2.032 9.51019C2.04381 9.56289 2.04813 9.6019 2.04814 9.65591C2.04814 9.71113 2.03812 9.77128 2.01807 9.89157L1.62275 12.2635C1.58135 12.5119 1.56065 12.6361 1.59917 12.7259C1.63289 12.8045 1.69552 12.8671 1.77412 12.9008C1.86393 12.9393 1.98812 12.9186 2.23651 12.8772L4.60843 12.4819C4.72872 12.4619 4.78887 12.4519 4.84409 12.4519C4.8981 12.4519 4.93711 12.4562 4.98981 12.468C5.04369 12.4801 5.11035 12.5072 5.24366 12.5613C5.9402 12.8442 6.7019 13 7.5 13ZM4.83333 7C4.83333 7.1841 4.6841 7.33333 4.5 7.33333C4.31591 7.33333 4.16667 7.1841 4.16667 7C4.16667 6.81591 4.31591 6.66667 4.5 6.66667C4.6841 6.66667 4.83333 6.81591 4.83333 7ZM7.83333 7C7.83333 7.1841 7.6841 7.33333 7.5 7.33333C7.31591 7.33333 7.16667 7.1841 7.16667 7C7.16667 6.81591 7.31591 6.66667 7.5 6.66667C7.6841 6.66667 7.83333 6.81591 7.83333 7ZM10.8333 7C10.8333 7.1841 10.6841 7.33333 10.5 7.33333C10.3159 7.33333 10.1667 7.1841 10.1667 7C10.1667 6.81591 10.3159 6.66667 10.5 6.66667C10.6841 6.66667 10.8333 6.81591 10.8333 7Z" stroke="#FF0066" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    </span>
+    <!-- text -->
+    <p class="text-[0.75rem] font-semibold text-brightPink">Message</p>
+    </button>  
+    </div>
+    <!-- follower end -->
+
+    <!-- View more -->
+    <p class="text-[0.75rem] text-primary text-center leading-[1.125rem] font-bold w-full">View more</p>
+    </section>
+    <!-- Top follower wrapper end -->
+
+
+
+    <!-- unsubscribe wrapper start-->
+    <section class=" flex flex-col gap-[0.5rem] w-full">
+    <!-- heading wrapper -->
+    <div class="flex items-center justify-between h-[2.125rem]">
+    <h4 class="text-[0.875rem] text-gray-500 leading-[1.25rem] py-[0.25rem] font-semibold w-full">Unsubscribed Users</h4>
+
+    <!-- button wrapper -->
+    <button class="flex items-center justify-center gap-[0.5rem] h-[1.625rem] px-[0.5rem] bg-brightPink">
+    <!-- message icon -->
+    <span class="w-1rem h-[1rem]">
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4.375 7H4.38167M7.375 7H7.38167M10.375 7H10.3817M7.375 13C10.6887 13 13.375 10.3137 13.375 7C13.375 3.68629 10.6887 1 7.375 1C4.06129 1 1.375 3.68629 1.375 7C1.375 7.7981 1.53082 8.5598 1.81371 9.25634C1.86785 9.38965 1.89492 9.45631 1.907 9.51019C1.91881 9.56289 1.92313 9.6019 1.92314 9.65591C1.92314 9.71113 1.91312 9.77128 1.89307 9.89157L1.49775 12.2635C1.45635 12.5119 1.43565 12.6361 1.47417 12.7259C1.50789 12.8045 1.57052 12.8671 1.64912 12.9008C1.73893 12.9393 1.86312 12.9186 2.11151 12.8772L4.48343 12.4819C4.60372 12.4619 4.66387 12.4519 4.71909 12.4519C4.7731 12.4519 4.81211 12.4562 4.86481 12.468C4.91869 12.4801 4.98535 12.5072 5.11866 12.5613C5.8152 12.8442 6.5769 13 7.375 13ZM4.70833 7C4.70833 7.1841 4.5591 7.33333 4.375 7.33333C4.19091 7.33333 4.04167 7.1841 4.04167 7C4.04167 6.81591 4.19091 6.66667 4.375 6.66667C4.5591 6.66667 4.70833 6.81591 4.70833 7ZM7.70833 7C7.70833 7.1841 7.5591 7.33333 7.375 7.33333C7.19091 7.33333 7.04167 7.1841 7.04167 7C7.04167 6.81591 7.19091 6.66667 7.375 6.66667C7.5591 6.66667 7.70833 6.81591 7.70833 7ZM10.7083 7C10.7083 7.1841 10.5591 7.33333 10.375 7.33333C10.1909 7.33333 10.0417 7.1841 10.0417 7C10.0417 6.81591 10.1909 6.66667 10.375 6.66667C10.5591 6.66667 10.7083 6.81591 10.7083 7Z" stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+
+    </span>
+    <!-- text -->
+    <span class="flex items-center gap-[0.25rem] text-[white] w-[6.125rem]">
+    <p class="text-[0.75rem] font-semibold text-white">Message All</p> <span class="text-[0.65625rem] font-semibold">30</span>
+    </span>
+    </button>
+    </div>
+    <!-- heading wrapper end -->
+
+    <!-- follower start-->
+    <div class="flex items-center justify-between w-full px-[0.25rem]">
+    <!-- user info -->
+    <span class="flex items-center gap-[0.5rem]">
+    <div class="w-[4rem] h-[4rem] bg-[url(./img/banana.png)] bg-cover bg-center mask-mango"></div>
+    <span class="flex flex-col h-[2.875rem] gap-[0.25rem]">
+    <h3 class="text-[1rem] text-gray-950 leading-[1.5rem] font-medium">Peachman</h3>
+    <p class="text-[0.75rem] text-gray-500 leading-[1.125rem]">@sammisjelly187</p>
+    </span>
+    </span>
+
+    <!-- button -->
+    <button class="flex items-center justify-center w-[6.0625rem] h-[1.625rem] gap-[0.5rem] border border-brightPink">
+    <!-- message icon -->
+    <span class="w-[1rem] h-[1rem]">
+    <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4.5 7H4.50667M7.5 7H7.50667M10.5 7H10.5067M7.5 13C10.8137 13 13.5 10.3137 13.5 7C13.5 3.68629 10.8137 1 7.5 1C4.18629 1 1.5 3.68629 1.5 7C1.5 7.7981 1.65582 8.5598 1.93871 9.25634C1.99285 9.38965 2.01992 9.45631 2.032 9.51019C2.04381 9.56289 2.04813 9.6019 2.04814 9.65591C2.04814 9.71113 2.03812 9.77128 2.01807 9.89157L1.62275 12.2635C1.58135 12.5119 1.56065 12.6361 1.59917 12.7259C1.63289 12.8045 1.69552 12.8671 1.77412 12.9008C1.86393 12.9393 1.98812 12.9186 2.23651 12.8772L4.60843 12.4819C4.72872 12.4619 4.78887 12.4519 4.84409 12.4519C4.8981 12.4519 4.93711 12.4562 4.98981 12.468C5.04369 12.4801 5.11035 12.5072 5.24366 12.5613C5.9402 12.8442 6.7019 13 7.5 13ZM4.83333 7C4.83333 7.1841 4.6841 7.33333 4.5 7.33333C4.31591 7.33333 4.16667 7.1841 4.16667 7C4.16667 6.81591 4.31591 6.66667 4.5 6.66667C4.6841 6.66667 4.83333 6.81591 4.83333 7ZM7.83333 7C7.83333 7.1841 7.6841 7.33333 7.5 7.33333C7.31591 7.33333 7.16667 7.1841 7.16667 7C7.16667 6.81591 7.31591 6.66667 7.5 6.66667C7.6841 6.66667 7.83333 6.81591 7.83333 7ZM10.8333 7C10.8333 7.1841 10.6841 7.33333 10.5 7.33333C10.3159 7.33333 10.1667 7.1841 10.1667 7C10.1667 6.81591 10.3159 6.66667 10.5 6.66667C10.6841 6.66667 10.8333 6.81591 10.8333 7Z" stroke="#FF0066" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    </span>
+    <!-- text -->
+    <p class="text-[0.75rem] font-semibold text-brightPink">Message</p>
+    </button>  
+    </div>
+    <!-- follower end -->
+
+
+    <!-- follower start-->
+    <div class="flex items-center justify-between w-full px-[0.25rem]">
+    <!-- user info -->
+    <span class="flex items-center gap-[0.5rem]">
+    <div class="w-[4rem] h-[4rem] bg-[url(./img/strawberry.png)] bg-cover bg-center mask-mango"></div>
+    <span class="flex flex-col h-[2.875rem] gap-[0.25rem]">
+    <h3 class="text-[1rem] text-gray-950 leading-[1.5rem] font-medium">SirStrawberry</h3>
+    <p class="text-[0.75rem] text-gray-500 leading-[1.125rem]">@sammisjelly187</p>
+    </span>
+    </span>
+
+    <!-- button -->
+    <button class="flex items-center justify-center w-[6.0625rem] h-[1.625rem] gap-[0.5rem] border border-brightPink">
+    <!-- message icon -->
+    <span class="w-[1rem] h-[1rem]">
+    <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4.5 7H4.50667M7.5 7H7.50667M10.5 7H10.5067M7.5 13C10.8137 13 13.5 10.3137 13.5 7C13.5 3.68629 10.8137 1 7.5 1C4.18629 1 1.5 3.68629 1.5 7C1.5 7.7981 1.65582 8.5598 1.93871 9.25634C1.99285 9.38965 2.01992 9.45631 2.032 9.51019C2.04381 9.56289 2.04813 9.6019 2.04814 9.65591C2.04814 9.71113 2.03812 9.77128 2.01807 9.89157L1.62275 12.2635C1.58135 12.5119 1.56065 12.6361 1.59917 12.7259C1.63289 12.8045 1.69552 12.8671 1.77412 12.9008C1.86393 12.9393 1.98812 12.9186 2.23651 12.8772L4.60843 12.4819C4.72872 12.4619 4.78887 12.4519 4.84409 12.4519C4.8981 12.4519 4.93711 12.4562 4.98981 12.468C5.04369 12.4801 5.11035 12.5072 5.24366 12.5613C5.9402 12.8442 6.7019 13 7.5 13ZM4.83333 7C4.83333 7.1841 4.6841 7.33333 4.5 7.33333C4.31591 7.33333 4.16667 7.1841 4.16667 7C4.16667 6.81591 4.31591 6.66667 4.5 6.66667C4.6841 6.66667 4.83333 6.81591 4.83333 7ZM7.83333 7C7.83333 7.1841 7.6841 7.33333 7.5 7.33333C7.31591 7.33333 7.16667 7.1841 7.16667 7C7.16667 6.81591 7.31591 6.66667 7.5 6.66667C7.6841 6.66667 7.83333 6.81591 7.83333 7ZM10.8333 7C10.8333 7.1841 10.6841 7.33333 10.5 7.33333C10.3159 7.33333 10.1667 7.1841 10.1667 7C10.1667 6.81591 10.3159 6.66667 10.5 6.66667C10.6841 6.66667 10.8333 6.81591 10.8333 7Z" stroke="#FF0066" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    </span>
+    <!-- text -->
+    <p class="text-[0.75rem] font-semibold text-brightPink">Message</p>
+    </button>  
+    </div>
+    <!-- follower end -->
+
+
+    <!-- follower start-->
+    <div class="flex items-center justify-between w-full px-[0.25rem]">
+    <!-- user info -->
+    <span class="flex items-center gap-[0.5rem]">
+    <div class="w-[4rem] h-[4rem] bg-[url(./img/pineApple.png)] bg-cover bg-center mask-mango"></div>
+    <span class="flex flex-col h-[2.875rem] gap-[0.25rem]">
+    <h3 class="text-[1rem] text-gray-950 leading-[1.5rem] font-medium">Peachman</h3>
+    <p class="text-[0.75rem] text-gray-500 leading-[1.125rem]">@sammisjelly187</p>
+    </span>
+    </span>
+
+    <!-- button -->
+    <button class="flex items-center justify-center w-[6.0625rem] h-[1.625rem] gap-[0.5rem] border border-brightPink">
+    <!-- message icon -->
+    <span class="w-[1rem] h-[1rem]">
+    <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4.5 7H4.50667M7.5 7H7.50667M10.5 7H10.5067M7.5 13C10.8137 13 13.5 10.3137 13.5 7C13.5 3.68629 10.8137 1 7.5 1C4.18629 1 1.5 3.68629 1.5 7C1.5 7.7981 1.65582 8.5598 1.93871 9.25634C1.99285 9.38965 2.01992 9.45631 2.032 9.51019C2.04381 9.56289 2.04813 9.6019 2.04814 9.65591C2.04814 9.71113 2.03812 9.77128 2.01807 9.89157L1.62275 12.2635C1.58135 12.5119 1.56065 12.6361 1.59917 12.7259C1.63289 12.8045 1.69552 12.8671 1.77412 12.9008C1.86393 12.9393 1.98812 12.9186 2.23651 12.8772L4.60843 12.4819C4.72872 12.4619 4.78887 12.4519 4.84409 12.4519C4.8981 12.4519 4.93711 12.4562 4.98981 12.468C5.04369 12.4801 5.11035 12.5072 5.24366 12.5613C5.9402 12.8442 6.7019 13 7.5 13ZM4.83333 7C4.83333 7.1841 4.6841 7.33333 4.5 7.33333C4.31591 7.33333 4.16667 7.1841 4.16667 7C4.16667 6.81591 4.31591 6.66667 4.5 6.66667C4.6841 6.66667 4.83333 6.81591 4.83333 7ZM7.83333 7C7.83333 7.1841 7.6841 7.33333 7.5 7.33333C7.31591 7.33333 7.16667 7.1841 7.16667 7C7.16667 6.81591 7.31591 6.66667 7.5 6.66667C7.6841 6.66667 7.83333 6.81591 7.83333 7ZM10.8333 7C10.8333 7.1841 10.6841 7.33333 10.5 7.33333C10.3159 7.33333 10.1667 7.1841 10.1667 7C10.1667 6.81591 10.3159 6.66667 10.5 6.66667C10.6841 6.66667 10.8333 6.81591 10.8333 7Z" stroke="#FF0066" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    </span>
+    <!-- text -->
+    <p class="text-[0.75rem] font-semibold text-brightPink">Message</p>
+    </button>  
+    </div>
+    <!-- follower end -->
+
+
+    <!-- follower start-->
+    <div class="flex items-center justify-between w-full px-[0.25rem]">
+    <!-- user info -->
+    <span class="flex items-center gap-[0.5rem]">
+    <div class="w-[4rem] h-[4rem] bg-[url(./img/broccoli2.png)] bg-cover bg-center mask-mango"></div>
+    <span class="flex flex-col h-[2.875rem] gap-[0.25rem]">
+    <h3 class="text-[1rem] text-gray-950 leading-[1.5rem] font-medium">Bro Broc</h3>
+    <p class="text-[0.75rem] text-gray-500 leading-[1.125rem]">@sammisjelly187</p>
+    </span>
+    </span>
+
+    <!-- button -->
+    <button class="flex items-center justify-center w-[6.0625rem] h-[1.625rem] gap-[0.5rem] border border-brightPink">
+    <!-- message icon -->
+    <span class="w-[1rem] h-[1rem]">
+    <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4.5 7H4.50667M7.5 7H7.50667M10.5 7H10.5067M7.5 13C10.8137 13 13.5 10.3137 13.5 7C13.5 3.68629 10.8137 1 7.5 1C4.18629 1 1.5 3.68629 1.5 7C1.5 7.7981 1.65582 8.5598 1.93871 9.25634C1.99285 9.38965 2.01992 9.45631 2.032 9.51019C2.04381 9.56289 2.04813 9.6019 2.04814 9.65591C2.04814 9.71113 2.03812 9.77128 2.01807 9.89157L1.62275 12.2635C1.58135 12.5119 1.56065 12.6361 1.59917 12.7259C1.63289 12.8045 1.69552 12.8671 1.77412 12.9008C1.86393 12.9393 1.98812 12.9186 2.23651 12.8772L4.60843 12.4819C4.72872 12.4619 4.78887 12.4519 4.84409 12.4519C4.8981 12.4519 4.93711 12.4562 4.98981 12.468C5.04369 12.4801 5.11035 12.5072 5.24366 12.5613C5.9402 12.8442 6.7019 13 7.5 13ZM4.83333 7C4.83333 7.1841 4.6841 7.33333 4.5 7.33333C4.31591 7.33333 4.16667 7.1841 4.16667 7C4.16667 6.81591 4.31591 6.66667 4.5 6.66667C4.6841 6.66667 4.83333 6.81591 4.83333 7ZM7.83333 7C7.83333 7.1841 7.6841 7.33333 7.5 7.33333C7.31591 7.33333 7.16667 7.1841 7.16667 7C7.16667 6.81591 7.31591 6.66667 7.5 6.66667C7.6841 6.66667 7.83333 6.81591 7.83333 7ZM10.8333 7C10.8333 7.1841 10.6841 7.33333 10.5 7.33333C10.3159 7.33333 10.1667 7.1841 10.1667 7C10.1667 6.81591 10.3159 6.66667 10.5 6.66667C10.6841 6.66667 10.8333 6.81591 10.8333 7Z" stroke="#FF0066" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    </span>
+    <!-- text -->
+    <p class="text-[0.75rem] font-semibold text-brightPink">Message</p>
+    </button>  
+    </div>
+    <!-- follower end -->
+
+    <!-- View more -->
+    <p class="text-[0.75rem] text-primary text-center leading-[1.125rem] font-bold w-full">View more</p>
+    </section>
+    <!-- unsubscribe wrapper end -->
+
+
+
+    </section>
+    <!-- body wrapper end -->
+    </div>
+    </div>
+    <!-- NEW CHAT POPUP END -->
+
+
+    <!-- NEW CHAT POPUP BLANK START -->
+    <div class="absolute flex flex-col items-center top-[80rem] left-[30rem] z-[10] rounded-[0.5rem] bg-gray-200 shadow-custom2 w-[42.1875rem]">
+
+    <section class="flex items-center justify-between gap-[0.635rem] px-[0.5rem] w-full h-[3.5rem]">
+    <p class="text-[0.875rem] text-gray-500 font-semibold leading-[1.25rem]">New Message</p>
+    <span class="flex items-center justify-center w-[1.25rem] h-[1.25rem]">
+    <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M11.5 1L1.5 11M1.5 1L11.5 11" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    </span>
+    </section>
+
+    <!-- SEARCH WRAPPER -->
+    <section class="flex items-center justify-between gap-[0.375rem] py-[0.5rem] px-[0.75rem] h-[3rem] w-full bg-gray-100 border-b border-gray-950">
+    <span class="flex w-[39.1875rem]">
+    <p class="text-[1rem] text-gray-900 leading-[1.5rem] w-[1.81375rem]">TO</p>
+    <input type="text" value="Pinapps" class="text-[1rem] leading-[1.5rem] text-gray-900 bg-gray-100 w-full focus:outline-none" placeholder="Search fans and models by username...">
+    </span>
+
+    <span class="flex items-center justify-center w-[1rem] h-[1rem]">
+    <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7.83341 1.66699L1.16675 8.33366M1.16675 1.66699L7.83341 8.33366" stroke="#98A2B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    </span>
+
+    </section>
+
+    <!-- body container -->
+    <div class="flex flex-col items-center justify-center p-[1rem] w-full h-[27.3125rem]">
+    <img src="./img/emptyLogo.png" alt="empty" width="150" height="150">
+    <p class="text-[1rem] text-gray-500 font-regular text-center leading-[1.5rem]">No result under the keyword ‘Pinapps’.</p>
+    </div>
+    </div>
+    <!-- NEW CHAT POPUP BLANK END -->
+
+
+    <!-- NEW CHAT POPUP BLANK START -->
+    <div class="absolute flex flex-col items-center top-[120rem] left-[30rem] z-[10] rounded-[0.5rem] bg-gray-200 shadow-custom2 w-[42.1875rem]">
+
+    <section class="flex items-center justify-between gap-[0.635rem] px-[0.5rem] w-full h-[3.5rem]">
+    <p class="text-[0.875rem] text-gray-500 font-semibold leading-[1.25rem]">New Message</p>
+    <span class="flex items-center justify-center w-[1.25rem] h-[1.25rem]">
+    <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M11.5 1L1.5 11M1.5 1L11.5 11" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    </span>
+    </section>
+
+    <!-- SEARCH WRAPPER -->
+    <section class="flex items-center justify-between gap-[0.375rem] py-[0.5rem] px-[0.75rem] h-[3rem] w-full bg-gray-100 border-b border-gray-950">
+    <span class="flex w-[39.1875rem]">
+    <p class="text-[1rem] text-gray-900 leading-[1.5rem] w-[1.81375rem]">TO</p>
+    <input type="text" value="Pinapps" class="text-[1rem] leading-[1.5rem] text-gray-900 bg-gray-100 w-full focus:outline-none" placeholder="Search fans and models by username...">
+    </span>
+
+    <span class="flex items-center justify-center w-[1rem] h-[1rem]">
+    <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7.83341 1.66699L1.16675 8.33366M1.16675 1.66699L7.83341 8.33366" stroke="#98A2B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    </span>
+
+    </section>
+
+    <!-- body container -->
+    <div class="flex flex-col items-center justify-start px-[1rem] w-full h-[27.3125rem]">
+    <!-- body wrapper -->
+    <span class="flex flex-col gap-[0.5rem] w-full">
+    <p class="text-[0.75rem] text-gray-500 font-semibold leading-[1.25rem] py-[0.25rem] w-full">2 results</p>
+
+    <!-- follower start-->
+    <div class="flex items-center justify-between w-full px-[0.25rem]">
+    <!-- user info -->
+    <span class="flex items-center gap-[0.5rem]">
+    <div class="w-[4rem] h-[4rem] bg-[url(./img/pineApple.png)] bg-cover bg-center mask-mango"></div>
+    <span class="flex flex-col h-[2.875rem] gap-[0.25rem]">
+    <h3 class="text-[1rem] text-gray-950 leading-[1.5rem] font-medium">Pineapple</h3>
+    <p class="text-[0.75rem] text-gray-500 leading-[1.125rem]">@sammisjelly187</p>
+    </span>
+    </span>
+
+    <!-- button -->
+    <button class="flex items-center justify-center w-[6.0625rem] h-[1.625rem] gap-[0.5rem] bg-brightPink">
+    <!-- message icon -->
+    <span class="w-[1rem] h-[1rem]">
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4 7H4.00667M7 7H7.00667M10 7H10.0067M7 13C10.3137 13 13 10.3137 13 7C13 3.68629 10.3137 1 7 1C3.68629 1 1 3.68629 1 7C1 7.7981 1.15582 8.5598 1.43871 9.25634C1.49285 9.38965 1.51992 9.45631 1.532 9.51019C1.54381 9.56289 1.54813 9.6019 1.54814 9.65591C1.54814 9.71113 1.53812 9.77128 1.51807 9.89157L1.12275 12.2635C1.08135 12.5119 1.06065 12.6361 1.09917 12.7259C1.13289 12.8045 1.19552 12.8671 1.27412 12.9008C1.36393 12.9393 1.48812 12.9186 1.73651 12.8772L4.10843 12.4819C4.22872 12.4619 4.28887 12.4519 4.34409 12.4519C4.3981 12.4519 4.43711 12.4562 4.48981 12.468C4.54369 12.4801 4.61035 12.5072 4.74366 12.5613C5.4402 12.8442 6.2019 13 7 13ZM4.33333 7C4.33333 7.1841 4.1841 7.33333 4 7.33333C3.81591 7.33333 3.66667 7.1841 3.66667 7C3.66667 6.81591 3.81591 6.66667 4 6.66667C4.1841 6.66667 4.33333 6.81591 4.33333 7ZM7.33333 7C7.33333 7.1841 7.1841 7.33333 7 7.33333C6.81591 7.33333 6.66667 7.1841 6.66667 7C6.66667 6.81591 6.81591 6.66667 7 6.66667C7.1841 6.66667 7.33333 6.81591 7.33333 7ZM10.3333 7C10.3333 7.1841 10.1841 7.33333 10 7.33333C9.81591 7.33333 9.66667 7.1841 9.66667 7C9.66667 6.81591 9.81591 6.66667 10 6.66667C10.1841 6.66667 10.3333 6.81591 10.3333 7Z" stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    </span>
+    <!-- text -->
+    <p class="text-[0.75rem] font-semibold text-white ">Message</p>
+    </button>  
+    </div>
+    <!-- follower end -->
+
+    <!-- follower start-->
+    <div class="flex items-center justify-between w-full px-[0.25rem]">
+    <!-- user info -->
+    <span class="flex items-center gap-[0.5rem]">
+    <div class="w-[4rem] h-[4rem] bg-[url(./img/pineApple.png)] bg-cover bg-center mask-mango"></div>
+    <span class="flex flex-col h-[2.875rem] gap-[0.25rem]">
+    <h3 class="text-[1rem] text-gray-950 leading-[1.5rem] font-medium">Pineapplepen</h3>
+    <p class="text-[0.75rem] text-gray-500 leading-[1.125rem]">@sammisjelly187</p>
+    </span>
+    </span>
+
+    <!-- button -->
+    <button class="flex items-center justify-center w-[6.0625rem] h-[1.625rem] gap-[0.5rem] bg-brightPink">
+    <!-- message icon -->
+    <span class="w-[1rem] h-[1rem]">
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4 7H4.00667M7 7H7.00667M10 7H10.0067M7 13C10.3137 13 13 10.3137 13 7C13 3.68629 10.3137 1 7 1C3.68629 1 1 3.68629 1 7C1 7.7981 1.15582 8.5598 1.43871 9.25634C1.49285 9.38965 1.51992 9.45631 1.532 9.51019C1.54381 9.56289 1.54813 9.6019 1.54814 9.65591C1.54814 9.71113 1.53812 9.77128 1.51807 9.89157L1.12275 12.2635C1.08135 12.5119 1.06065 12.6361 1.09917 12.7259C1.13289 12.8045 1.19552 12.8671 1.27412 12.9008C1.36393 12.9393 1.48812 12.9186 1.73651 12.8772L4.10843 12.4819C4.22872 12.4619 4.28887 12.4519 4.34409 12.4519C4.3981 12.4519 4.43711 12.4562 4.48981 12.468C4.54369 12.4801 4.61035 12.5072 4.74366 12.5613C5.4402 12.8442 6.2019 13 7 13ZM4.33333 7C4.33333 7.1841 4.1841 7.33333 4 7.33333C3.81591 7.33333 3.66667 7.1841 3.66667 7C3.66667 6.81591 3.81591 6.66667 4 6.66667C4.1841 6.66667 4.33333 6.81591 4.33333 7ZM7.33333 7C7.33333 7.1841 7.1841 7.33333 7 7.33333C6.81591 7.33333 6.66667 7.1841 6.66667 7C6.66667 6.81591 6.81591 6.66667 7 6.66667C7.1841 6.66667 7.33333 6.81591 7.33333 7ZM10.3333 7C10.3333 7.1841 10.1841 7.33333 10 7.33333C9.81591 7.33333 9.66667 7.1841 9.66667 7C9.66667 6.81591 9.81591 6.66667 10 6.66667C10.1841 6.66667 10.3333 6.81591 10.3333 7Z" stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    </span>
+    <!-- text -->
+    <p class="text-[0.75rem] font-semibold text-white ">Message</p>
+    </button>  
+    </div>
+    <!-- follower end -->
+
+    </span>
+    </div>
+    </div>
+    <!-- NEW CHAT POPUP BLANK END -->
+
+
+    
+
+  </body>
+</html>
