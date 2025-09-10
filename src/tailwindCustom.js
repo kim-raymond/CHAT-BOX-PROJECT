@@ -68,6 +68,15 @@ tailwind.config = {
                           DEFAULT: '#4CC9F0',
                           dark: '#4CC9F0',
                       },
+                      customGrey:{
+                        DEFAULT:'#E3E4E1'
+                      },
+                      customGrey2:{
+                        DEFAULT:'#DFE1DD'
+                      },
+                      customDarkGrey:{
+                        DEFAULT:'#B7BBBB'
+                      },
                       background: {
                           DEFAULT: 'rgba(234, 236, 240, 0.9)',
                           dark: 'rgba(34,37,38,0.9)',
@@ -139,6 +148,7 @@ tailwind.config = {
                       custom: '4px 0 10px 0 rgba(0, 0, 0, 0.08)',
                       custom2: "0 0.25rem 0.25rem 0 rgba(0,0,0,0.25)",
                       '3xl': '0 0 0.75rem rgba(0, 0, 0, 0.25)',
+                      'purple-glow': '0 0 8px 0 rgba(131, 88, 255, 0.5)',
                       
                   },
                   fontFamily: {
